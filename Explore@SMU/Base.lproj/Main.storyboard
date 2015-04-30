@@ -29,6 +29,9 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Xck-rQ-VpR">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="531"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -39,6 +42,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="mapView" destination="Xck-rQ-VpR" id="t7X-4S-KIj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -148,8 +154,7 @@
         <!--Fourth-->
         <scene sceneID="op0-37-U7a">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ErI-70-z1q" sceneMemberID="firstResponder"/>
-                <viewController id="UVm-vb-sMP" userLabel="Fourth" customClass="FourthViewController" customModule="Explore_SMU" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Fourth" id="UVm-vb-sMP" userLabel="Fourth" customClass="FourthViewController" customModule="Explore_SMU" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="B6W-8O-ldI"/>
                         <viewControllerLayoutGuide type="bottom" id="mTc-E5-3l6"/>
@@ -182,6 +187,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="CwL-HB-CmJ" userLabel="Fourth"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ErI-70-z1q" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="262" y="819"/>
         </scene>

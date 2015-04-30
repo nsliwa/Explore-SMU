@@ -7,11 +7,18 @@
 //
 
 import UIKit
+import MapKit
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController, MKMapViewDelegate {
 
+    @IBOutlet weak var mapView: MKMapView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tabBarItem = UITabBarItem(title: "Explore!", image: nil, tag: 1)
+        self.mapView.showsUserLocation = true
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
