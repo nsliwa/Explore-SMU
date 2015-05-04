@@ -8,11 +8,11 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class SearchViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tabBarItem = UITabBarItem(title: "Search", image: nil, tag: 2)
+//        self.tabBarItem = UITabBarItem(title: "Search", image: nil, tag: 2)
         
         // Do any additional setup after loading the view, typically from a nib.
     }

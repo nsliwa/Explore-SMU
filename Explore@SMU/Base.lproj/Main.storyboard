@@ -1,76 +1,82 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--Explore-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="Explore_SMU" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="ExploreViewController" customModule="Explore_SMU" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <rect key="frame" x="221" y="279" width="158" height="42"/>
+                                <rect key="frame" x="81" y="263" width="158" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <rect key="frame" x="203" y="329" width="195" height="17"/>
+                                <rect key="frame" x="63" y="313" width="195" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Xck-rQ-VpR">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="531"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Xck-rQ-VpR">
+                                <rect key="frame" x="-140" y="56" width="600" height="531"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="SI8-G7-pxL"/>
+                                </constraints>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
+                            <constraint firstAttribute="centerY" secondItem="Xck-rQ-VpR" secondAttribute="centerY" constant="-37.5" id="6XL-59-BUD"/>
+                            <constraint firstItem="Xck-rQ-VpR" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="36" id="IS8-ao-TZr"/>
+                            <constraint firstAttribute="centerX" secondItem="Xck-rQ-VpR" secondAttribute="centerX" id="Ieq-YP-NVC"/>
                             <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
                             <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
                             <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Explore" image="explore-30x30" selectedImage="explore-30x30" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="mapView" destination="Xck-rQ-VpR" id="t7X-4S-KIj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="415" y="-699"/>
         </scene>
-        <!--Second-->
+        <!--Search-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Explore_SMU" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="SearchViewController" customModule="Explore_SMU" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="195" y="279" width="210" height="42"/>
+                                <rect key="frame" x="55" y="263" width="210" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <rect key="frame" x="192" y="329" width="216" height="17"/>
+                                <rect key="frame" x="52" y="313" width="216" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -84,11 +90,12 @@
                             <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="navigate-30x30" selectedImage="navigate-30x30" id="cPa-gy-q4n"/>
+                    <navigationItem key="navigationItem" id="S5h-iO-7Ll"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="360"/>
+            <point key="canvasLocation" x="838" y="-8"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -102,35 +109,35 @@
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
-                        <segue destination="8da-k1-Fbo" kind="relationship" relationship="viewControllers" id="FUK-wB-Zhf"/>
-                        <segue destination="UVm-vb-sMP" kind="relationship" relationship="viewControllers" id="wKO-EW-ilH"/>
+                        <segue destination="GXE-Cx-aFL" kind="relationship" relationship="viewControllers" id="lZt-6G-RAf"/>
+                        <segue destination="caM-3G-giY" kind="relationship" relationship="viewControllers" id="DMF-fW-t1y"/>
+                        <segue destination="m6d-4v-mHp" kind="relationship" relationship="viewControllers" id="HIx-0r-2UM"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-32" y="-8"/>
         </scene>
         <!--Third-->
         <scene sceneID="oth-2n-gR5">
             <objects>
-                <viewController id="8da-k1-Fbo" userLabel="Third" customClass="ThirdViewController" customModule="Explore_SMU" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8da-k1-Fbo" userLabel="Third" customClass="InvestigateViewController" customModule="Explore_SMU" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MPG-WQ-UTr"/>
                         <viewControllerLayoutGuide type="bottom" id="U8d-FK-4jk"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="S5A-xR-GAn">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by ThirdViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBL-PM-Eml">
-                                <rect key="frame" x="201" y="329" width="199" height="17"/>
+                                <rect key="frame" x="61" y="313" width="199" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Third View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="3uG-p6-VJO">
-                                <rect key="frame" x="215" y="279" width="170" height="42"/>
+                                <rect key="frame" x="75" y="263" width="170" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -145,33 +152,51 @@
                             <constraint firstAttribute="centerY" secondItem="3uG-p6-VJO" secondAttribute="centerY" id="pZ0-PT-mmL"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="4sq-ut-V2O" userLabel="Third"/>
+                    <tabBarItem key="tabBarItem" title="Investigate" image="search-30x30" selectedImage="search-30x30" id="4sq-ut-V2O" userLabel="Third"/>
+                    <navigationItem key="navigationItem" id="sdR-7z-OkT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q1r-6K-r3G" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-395" y="819"/>
+            <point key="canvasLocation" x="25" y="710"/>
+        </scene>
+        <!--Scavenger Hunt-->
+        <scene sceneID="ubC-9L-l9y">
+            <objects>
+                <navigationController id="caM-3G-giY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Scavenger Hunt" image="search-30x30" selectedImage="search-30x30" id="dTf-Tf-xZS"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lPw-6c-s1v">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8da-k1-Fbo" kind="relationship" relationship="rootViewController" id="1yt-op-9ca"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="55X-PC-lHq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-408" y="710"/>
         </scene>
         <!--Fourth-->
         <scene sceneID="op0-37-U7a">
             <objects>
-                <viewController title="Fourth" id="UVm-vb-sMP" userLabel="Fourth" customClass="FourthViewController" customModule="Explore_SMU" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Fourth" id="UVm-vb-sMP" userLabel="Fourth" customClass="AskViewController" customModule="Explore_SMU" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="B6W-8O-ldI"/>
                         <viewControllerLayoutGuide type="bottom" id="mTc-E5-3l6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="57i-7i-fay">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Fourth View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="bRh-6m-tpT">
-                                <rect key="frame" x="204" y="279" width="192" height="42"/>
+                                <rect key="frame" x="64" y="263" width="192" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Loaded by FourthViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="puX-1Q-7DJ">
-                                <rect key="frame" x="187" y="329" width="226" height="17"/>
+                                <rect key="frame" x="187" y="313" width="226" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -185,15 +210,57 @@
                             <constraint firstAttribute="centerY" secondItem="bRh-6m-tpT" secondAttribute="centerY" id="moH-49-DVH"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="CwL-HB-CmJ" userLabel="Fourth"/>
+                    <tabBarItem key="tabBarItem" title="Ask" image="ask-30x30" selectedImage="ask-30x30" id="CwL-HB-CmJ" userLabel="Fourth"/>
+                    <navigationItem key="navigationItem" id="DKk-zx-6NC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ErI-70-z1q" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="262" y="819"/>
+            <point key="canvasLocation" x="838" y="710"/>
+        </scene>
+        <!--Ask a Tour Guide-->
+        <scene sceneID="36s-dx-m4x">
+            <objects>
+                <navigationController id="m6d-4v-mHp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Ask a Tour Guide" image="ask-30x30" selectedImage="ask-30x30" id="OIC-fp-MB3"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5F3-FV-B5A">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="UVm-vb-sMP" kind="relationship" relationship="rootViewController" id="32P-mY-D1b"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xgw-bv-TQD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="415" y="710"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="9nH-At-XVr">
+            <objects>
+                <navigationController id="GXE-Cx-aFL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Search" image="navigate-30x30" selectedImage="navigate-30x30" id="rSr-a5-EMB"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oMH-5v-Q2P">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="aOu-IO-adV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iEz-4g-Rwi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="415" y="-8"/>
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="ask-30x30" width="30" height="30"/>
+        <image name="explore-30x30" width="30" height="30"/>
+        <image name="navigate-30x30" width="30" height="30"/>
+        <image name="search-30x30" width="30" height="30"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>
