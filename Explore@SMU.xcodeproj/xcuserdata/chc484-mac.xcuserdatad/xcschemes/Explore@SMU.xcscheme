@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AD938E391AE86EC80017E034"
+               BlueprintIdentifier = "EF941FA11AEFF1DF001C1332"
                BuildableName = "Explore@SMU.app"
                BlueprintName = "Explore@SMU"
                ReferencedContainer = "container:Explore@SMU.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AD938E4E1AE86EC80017E034"
+               BlueprintIdentifier = "EF941FB81AEFF1E0001C1332"
                BuildableName = "Explore@SMUTests.xctest"
                BlueprintName = "Explore@SMUTests"
                ReferencedContainer = "container:Explore@SMU.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AD938E4E1AE86EC80017E034"
+               BlueprintIdentifier = "EF941FB81AEFF1E0001C1332"
                BuildableName = "Explore@SMUTests.xctest"
                BlueprintName = "Explore@SMUTests"
                ReferencedContainer = "container:Explore@SMU.xcodeproj">
@@ -56,7 +56,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AD938E391AE86EC80017E034"
+            BlueprintIdentifier = "EF941FA11AEFF1DF001C1332"
             BuildableName = "Explore@SMU.app"
             BlueprintName = "Explore@SMU"
             ReferencedContainer = "container:Explore@SMU.xcodeproj">
@@ -76,7 +76,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AD938E391AE86EC80017E034"
+            BlueprintIdentifier = "EF941FA11AEFF1DF001C1332"
             BuildableName = "Explore@SMU.app"
             BlueprintName = "Explore@SMU"
             ReferencedContainer = "container:Explore@SMU.xcodeproj">
@@ -95,7 +95,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AD938E391AE86EC80017E034"
+            BlueprintIdentifier = "EF941FA11AEFF1DF001C1332"
             BuildableName = "Explore@SMU.app"
             BlueprintName = "Explore@SMU"
             ReferencedContainer = "container:Explore@SMU.xcodeproj">
