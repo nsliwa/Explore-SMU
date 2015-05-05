@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FoundLandmarks</key>
+	<array/>
+	<key>Locations</key>
+	<dict>
+		<key>Lyle School of Engineering</key>
+		<array>
+			<string>Caruth</string>
+			<string>Hunt Center</string>
+			<string>Lyle Seal</string>
+			<string>Wall of Patents</string>
+			<string>Ampitheater</string>
+			<string>Embrey</string>
+			<string>Office of Recruitment</string>
+			<string>Junkins</string>
+		</array>
+		<key>Cox School of Business</key>
+		<array/>
+		<key>Meadows School of Arts</key>
+		<array/>
+		<key>Dedman School of Humanities</key>
+		<array/>
+		<key>Athletics</key>
+		<array>
+			<string>Lloyd All Sports Center</string>
+			<string>Gerald J. Ford Stadium</string>
+			<string>Dedman Rec Center</string>
+			<string>Moody Coliseum</string>
+			<string>Peruna Statue</string>
+		</array>
+		<key>Student Services</key>
+		<array>
+			<string>Centennial Pavilion</string>
+			<string>Centennial Fountain</string>
+		</array>
+		<key>Meadows Museum</key>
+		<array>
+			<string>La Joie de Vivre</string>
+			<string>Figure with Raised Hands</string>
+			<string>Crouching Woman</string>
+			<string>Three Piece Reclining Figure</string>
+			<string>Sho</string>
+			<string>Horse and Rider</string>
+			<string>Geometric Mouse II</string>
+			<string>Spirit&apos;s Flight</string>
+		</array>
+		<key>Residential Commons</key>
+		<array/>
+	</dict>
+</dict>
+</plist>

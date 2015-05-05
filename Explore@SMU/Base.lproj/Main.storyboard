@@ -160,6 +160,94 @@
             </objects>
             <point key="canvasLocation" x="25" y="710"/>
         </scene>
+        <!--Locations Table View Controller-->
+        <scene sceneID="Rww-63-xvx">
+            <objects>
+                <tableViewController id="Qok-Bd-yD8" customClass="LocationsTableViewController" customModule="Explore_SMU" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="YPg-MS-Jb9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="locationCell" textLabel="w70-il-btf" style="IBUITableViewCellStyleDefault" id="LVL-H1-6HF">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LVL-H1-6HF" id="bqM-JZ-djP">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="w70-il-btf">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="p0o-o3-uMn" kind="push" id="fUl-bX-35w"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Qok-Bd-yD8" id="AjO-MM-2yf"/>
+                            <outlet property="delegate" destination="Qok-Bd-yD8" id="h0d-i0-8Wc"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="MBJ-8y-yRE"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3RR-mo-3Ah" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-142" y="1435"/>
+        </scene>
+        <!--Landmarks Collection View Controller-->
+        <scene sceneID="opE-l5-fnW">
+            <objects>
+                <collectionViewController id="p0o-o3-uMn" customClass="LandmarksCollectionViewController" customModule="Explore_SMU" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="bNu-2R-dOq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8Sh-xz-dYc">
+                            <size key="itemSize" width="100" height="100"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="landmarkCell" id="2xX-jR-uC0" customClass="LandmarkCollectionViewCell" customModule="Explore_SMU" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tlm-CA-VGP">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        </imageView>
+                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Okn-hy-pFI">
+                                            <rect key="frame" x="29" y="71" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <outlet property="landmarkImage" destination="Tlm-CA-VGP" id="bWD-lB-MPR"/>
+                                    <outlet property="landmarkLabel" destination="Okn-hy-pFI" id="uAN-o3-WDv"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="p0o-o3-uMn" id="Hqi-Vv-kdF"/>
+                            <outlet property="delegate" destination="p0o-o3-uMn" id="HwI-Xw-IfN"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="RMf-BO-eai"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Qk-KS-y2h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="282" y="1435"/>
+        </scene>
         <!--Scavenger Hunt-->
         <scene sceneID="ubC-9L-l9y">
             <objects>
@@ -170,7 +258,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="8da-k1-Fbo" kind="relationship" relationship="rootViewController" id="1yt-op-9ca"/>
+                        <segue destination="Qok-Bd-yD8" kind="relationship" relationship="rootViewController" id="ttP-dk-srP"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="55X-PC-lHq" userLabel="First Responder" sceneMemberID="firstResponder"/>

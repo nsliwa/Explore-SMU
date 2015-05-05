@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD388F121AF8911100B78492 /* ScavengerHunt.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD388F111AF8911100B78492 /* ScavengerHunt.plist */; };
+		AD388F141AF89B7800B78492 /* LocationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD388F131AF89B7800B78492 /* LocationsTableViewController.swift */; };
+		AD388F161AF8A8DD00B78492 /* LandmarksCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD388F151AF8A8DD00B78492 /* LandmarksCollectionViewController.swift */; };
+		AD388F191AF8C0B700B78492 /* LandmarkCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD388F181AF8C0B700B78492 /* LandmarkCollectionViewCell.swift */; };
 		ADDD519D1AF7F35600D46E54 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDD519C1AF7F35600D46E54 /* MasterViewController.swift */; };
 		ADDD51A31AF8186300D46E54 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADDD51A01AF8186300D46E54 /* config.plist */; };
 		ADDD51A41AF8186300D46E54 /* fake.json in Resources */ = {isa = PBXBuildFile; fileRef = ADDD51A11AF8186300D46E54 /* fake.json */; };
@@ -40,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD388F111AF8911100B78492 /* ScavengerHunt.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ScavengerHunt.plist; sourceTree = "<group>"; };
+		AD388F131AF89B7800B78492 /* LocationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsTableViewController.swift; sourceTree = "<group>"; };
+		AD388F151AF8A8DD00B78492 /* LandmarksCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandmarksCollectionViewController.swift; sourceTree = "<group>"; };
+		AD388F181AF8C0B700B78492 /* LandmarkCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandmarkCollectionViewCell.swift; sourceTree = "<group>"; };
 		ADDD519C1AF7F35600D46E54 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		ADDD51A01AF8186300D46E54 /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
 		ADDD51A11AF8186300D46E54 /* fake.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fake.json; sourceTree = "<group>"; };
@@ -95,6 +103,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD388F171AF8A8EC00B78492 /* Scavenger Hunt */ = {
+			isa = PBXGroup;
+			children = (
+				EF941FC91AEFF2A9001C1332 /* InvestigateViewController.swift */,
+				AD388F131AF89B7800B78492 /* LocationsTableViewController.swift */,
+				AD388F151AF8A8DD00B78492 /* LandmarksCollectionViewController.swift */,
+				AD388F181AF8C0B700B78492 /* LandmarkCollectionViewCell.swift */,
+			);
+			name = "Scavenger Hunt";
+			sourceTree = "<group>";
+		};
 		ADDD51A61AF818A300D46E54 /* Watson */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,8 +166,8 @@
 				ADDD519C1AF7F35600D46E54 /* MasterViewController.swift */,
 				EF941FA91AEFF1DF001C1332 /* ExploreViewController.swift */,
 				EF941FAB1AEFF1DF001C1332 /* SearchViewController.swift */,
-				EF941FC91AEFF2A9001C1332 /* InvestigateViewController.swift */,
 				EF941FCB1AEFF2BD001C1332 /* AskViewController.swift */,
+				AD388F171AF8A8EC00B78492 /* Scavenger Hunt */,
 				EF941FA51AEFF1DF001C1332 /* Supporting Files */,
 			);
 			path = "Explore@SMU";
@@ -162,6 +181,7 @@
 				ADDD51A21AF8186300D46E54 /* WatsonPhotography-Prefix.pch */,
 				ADDD51A51AF8186F00D46E54 /* BridgingHeader.h */,
 				EF941FA61AEFF1DF001C1332 /* Info.plist */,
+				AD388F111AF8911100B78492 /* ScavengerHunt.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -270,6 +290,7 @@
 			files = (
 				ADDD51A31AF8186300D46E54 /* config.plist in Resources */,
 				EF941FAF1AEFF1E0001C1332 /* Main.storyboard in Resources */,
+				AD388F121AF8911100B78492 /* ScavengerHunt.plist in Resources */,
 				ADDD51A41AF8186300D46E54 /* fake.json in Resources */,
 				EF941FB41AEFF1E0001C1332 /* LaunchScreen.xib in Resources */,
 				EF941FB11AEFF1E0001C1332 /* Images.xcassets in Resources */,
@@ -296,6 +317,9 @@
 				EF941FA81AEFF1DF001C1332 /* AppDelegate.swift in Sources */,
 				ADDD519D1AF7F35600D46E54 /* MasterViewController.swift in Sources */,
 				ADDD51BC1AF818C700D46E54 /* WPWatsonQuestionResponse.m in Sources */,
+				AD388F141AF89B7800B78492 /* LocationsTableViewController.swift in Sources */,
+				AD388F161AF8A8DD00B78492 /* LandmarksCollectionViewController.swift in Sources */,
+				AD388F191AF8C0B700B78492 /* LandmarkCollectionViewCell.swift in Sources */,
 				EF941FCA1AEFF2A9001C1332 /* InvestigateViewController.swift in Sources */,
 				ADDD51B71AF818C700D46E54 /* WPMainViewController.m in Sources */,
 				ADDD51B91AF818C700D46E54 /* WPResultsTableViewController.m in Sources */,
