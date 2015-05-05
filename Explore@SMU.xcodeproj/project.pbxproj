@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		ADDD519D1AF7F35600D46E54 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDD519C1AF7F35600D46E54 /* MasterViewController.swift */; };
+		ADDD51A31AF8186300D46E54 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADDD51A01AF8186300D46E54 /* config.plist */; };
+		ADDD51A41AF8186300D46E54 /* fake.json in Resources */ = {isa = PBXBuildFile; fileRef = ADDD51A11AF8186300D46E54 /* fake.json */; };
+		ADDD51B61AF818C700D46E54 /* WPConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDD51A91AF818C700D46E54 /* WPConstants.m */; };
+		ADDD51B71AF818C700D46E54 /* WPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDD51AB1AF818C700D46E54 /* WPMainViewController.m */; };
+		ADDD51B81AF818C700D46E54 /* WPResultsDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDD51AD1AF818C700D46E54 /* WPResultsDetailsViewController.m */; };
+		ADDD51B91AF818C700D46E54 /* WPResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDD51AF1AF818C700D46E54 /* WPResultsTableViewController.m */; };
+		ADDD51BA1AF818C700D46E54 /* WPUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDD51B11AF818C700D46E54 /* WPUtils.m */; };
+		ADDD51BB1AF818C700D46E54 /* WPWatson.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDD51B31AF818C700D46E54 /* WPWatson.m */; };
+		ADDD51BC1AF818C700D46E54 /* WPWatsonQuestionResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDD51B51AF818C700D46E54 /* WPWatsonQuestionResponse.m */; };
 		EF931B171AF191C3006275A7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF931B161AF191C3006275A7 /* MapKit.framework */; };
 		EF941FA81AEFF1DF001C1332 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF941FA71AEFF1DF001C1332 /* AppDelegate.swift */; };
 		EF941FAA1AEFF1DF001C1332 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF941FA91AEFF1DF001C1332 /* ExploreViewController.swift */; };
@@ -32,6 +41,25 @@
 
 /* Begin PBXFileReference section */
 		ADDD519C1AF7F35600D46E54 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		ADDD51A01AF8186300D46E54 /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
+		ADDD51A11AF8186300D46E54 /* fake.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fake.json; sourceTree = "<group>"; };
+		ADDD51A21AF8186300D46E54 /* WatsonPhotography-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WatsonPhotography-Prefix.pch"; sourceTree = "<group>"; };
+		ADDD51A51AF8186F00D46E54 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		ADDD51A71AF818C600D46E54 /* Explore@SMU-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Explore@SMU-Bridging-Header.h"; sourceTree = "<group>"; };
+		ADDD51A81AF818C700D46E54 /* WPConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPConstants.h; sourceTree = "<group>"; };
+		ADDD51A91AF818C700D46E54 /* WPConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPConstants.m; sourceTree = "<group>"; };
+		ADDD51AA1AF818C700D46E54 /* WPMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPMainViewController.h; sourceTree = "<group>"; };
+		ADDD51AB1AF818C700D46E54 /* WPMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPMainViewController.m; sourceTree = "<group>"; };
+		ADDD51AC1AF818C700D46E54 /* WPResultsDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPResultsDetailsViewController.h; sourceTree = "<group>"; };
+		ADDD51AD1AF818C700D46E54 /* WPResultsDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPResultsDetailsViewController.m; sourceTree = "<group>"; };
+		ADDD51AE1AF818C700D46E54 /* WPResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPResultsTableViewController.h; sourceTree = "<group>"; };
+		ADDD51AF1AF818C700D46E54 /* WPResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPResultsTableViewController.m; sourceTree = "<group>"; };
+		ADDD51B01AF818C700D46E54 /* WPUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPUtils.h; sourceTree = "<group>"; };
+		ADDD51B11AF818C700D46E54 /* WPUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPUtils.m; sourceTree = "<group>"; };
+		ADDD51B21AF818C700D46E54 /* WPWatson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPWatson.h; sourceTree = "<group>"; };
+		ADDD51B31AF818C700D46E54 /* WPWatson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPWatson.m; sourceTree = "<group>"; };
+		ADDD51B41AF818C700D46E54 /* WPWatsonQuestionResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPWatsonQuestionResponse.h; sourceTree = "<group>"; };
+		ADDD51B51AF818C700D46E54 /* WPWatsonQuestionResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPWatsonQuestionResponse.m; sourceTree = "<group>"; };
 		EF931B161AF191C3006275A7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		EF941FA21AEFF1DF001C1332 /* Explore@SMU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Explore@SMU.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF941FA61AEFF1DF001C1332 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -67,6 +95,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ADDD51A61AF818A300D46E54 /* Watson */ = {
+			isa = PBXGroup;
+			children = (
+				ADDD51A81AF818C700D46E54 /* WPConstants.h */,
+				ADDD51A91AF818C700D46E54 /* WPConstants.m */,
+				ADDD51AA1AF818C700D46E54 /* WPMainViewController.h */,
+				ADDD51AB1AF818C700D46E54 /* WPMainViewController.m */,
+				ADDD51AC1AF818C700D46E54 /* WPResultsDetailsViewController.h */,
+				ADDD51AD1AF818C700D46E54 /* WPResultsDetailsViewController.m */,
+				ADDD51AE1AF818C700D46E54 /* WPResultsTableViewController.h */,
+				ADDD51AF1AF818C700D46E54 /* WPResultsTableViewController.m */,
+				ADDD51B01AF818C700D46E54 /* WPUtils.h */,
+				ADDD51B11AF818C700D46E54 /* WPUtils.m */,
+				ADDD51B21AF818C700D46E54 /* WPWatson.h */,
+				ADDD51B31AF818C700D46E54 /* WPWatson.m */,
+				ADDD51B41AF818C700D46E54 /* WPWatsonQuestionResponse.h */,
+				ADDD51B51AF818C700D46E54 /* WPWatsonQuestionResponse.m */,
+				ADDD51A71AF818C600D46E54 /* Explore@SMU-Bridging-Header.h */,
+			);
+			name = Watson;
+			sourceTree = "<group>";
+		};
 		EF941F991AEFF1DF001C1332 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +139,7 @@
 		EF941FA41AEFF1DF001C1332 /* Explore@SMU */ = {
 			isa = PBXGroup;
 			children = (
+				ADDD51A61AF818A300D46E54 /* Watson */,
 				EF941FA71AEFF1DF001C1332 /* AppDelegate.swift */,
 				EF941FAD1AEFF1E0001C1332 /* Main.storyboard */,
 				EF941FB21AEFF1E0001C1332 /* LaunchScreen.xib */,
@@ -106,6 +157,10 @@
 		EF941FA51AEFF1DF001C1332 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ADDD51A01AF8186300D46E54 /* config.plist */,
+				ADDD51A11AF8186300D46E54 /* fake.json */,
+				ADDD51A21AF8186300D46E54 /* WatsonPhotography-Prefix.pch */,
+				ADDD51A51AF8186F00D46E54 /* BridgingHeader.h */,
 				EF941FA61AEFF1DF001C1332 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -213,7 +268,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADDD51A31AF8186300D46E54 /* config.plist in Resources */,
 				EF941FAF1AEFF1E0001C1332 /* Main.storyboard in Resources */,
+				ADDD51A41AF8186300D46E54 /* fake.json in Resources */,
 				EF941FB41AEFF1E0001C1332 /* LaunchScreen.xib in Resources */,
 				EF941FB11AEFF1E0001C1332 /* Images.xcassets in Resources */,
 			);
@@ -233,11 +290,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADDD51BB1AF818C700D46E54 /* WPWatson.m in Sources */,
 				EF941FAC1AEFF1DF001C1332 /* SearchViewController.swift in Sources */,
+				ADDD51BA1AF818C700D46E54 /* WPUtils.m in Sources */,
 				EF941FA81AEFF1DF001C1332 /* AppDelegate.swift in Sources */,
 				ADDD519D1AF7F35600D46E54 /* MasterViewController.swift in Sources */,
+				ADDD51BC1AF818C700D46E54 /* WPWatsonQuestionResponse.m in Sources */,
 				EF941FCA1AEFF2A9001C1332 /* InvestigateViewController.swift in Sources */,
+				ADDD51B71AF818C700D46E54 /* WPMainViewController.m in Sources */,
+				ADDD51B91AF818C700D46E54 /* WPResultsTableViewController.m in Sources */,
+				ADDD51B81AF818C700D46E54 /* WPResultsDetailsViewController.m in Sources */,
 				EF941FAA1AEFF1DF001C1332 /* ExploreViewController.swift in Sources */,
+				ADDD51B61AF818C700D46E54 /* WPConstants.m in Sources */,
 				EF941FCC1AEFF2BD001C1332 /* AskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,10 +429,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Explore@SMU/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Explore@SMU/Explore@SMU-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -376,10 +443,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Explore@SMU/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Explore@SMU/Explore@SMU-Bridging-Header.h";
 			};
 			name = Release;
 		};

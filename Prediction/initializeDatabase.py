@@ -18,12 +18,13 @@ os.makedirs(root)
 
 
 locations = [
-	["Lyle", ["Hart Center", "Bio Informatics Lab", "Innovation Gym"]],
+	["Lyle", ["Wall of Patents", "Lyle Seal", "Hunt Center", "Ampitheater", "Caruth", "Embrey", "Office of Recruitment","Junkins"]],
 	["Meadows", []], 
 	["Cox", []],
 	["Dedman", []],
-	["Sports", []],
-	["Meadows Museum", []],
+	["Student Services", ["Centennial Pavilion", "Centennial Fountain"]]
+	["Athletics", ["Lloyd All Sports Center", "Stadium", "Doak Walker Plaza", "Dedman Center", "Moody Coliseum", "Peruna Statue"]],
+	["Meadows Museum", ["La Joie de Vivre", "Figure with Raised Hands", "Crouching Woman", "Three Piece Reclining Figure", "Sho", "Horse and Rider", "Geometric Mouse", "Spirit's Flight"]],
 	["Fondren Library", []],
 	["Residential Commons", []],
 	["Testing", ["Starbucks", "Blue Cups", "Candle", "Remote", "Ball"]]
