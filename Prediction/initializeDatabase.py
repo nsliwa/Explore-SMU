@@ -22,7 +22,7 @@ locations = [
 	["Meadows", []], 
 	["Cox", []],
 	["Dedman", []],
-	["Student Services", ["Centennial Pavilion", "Centennial Fountain"]]
+	["Student Services", ["Centennial Pavilion", "Centennial Fountain"]],
 	["Athletics", ["Lloyd All Sports Center", "Stadium", "Doak Walker Plaza", "Dedman Center", "Moody Coliseum", "Peruna Statue"]],
 	["Meadows Museum", ["La Joie de Vivre", "Figure with Raised Hands", "Crouching Woman", "Three Piece Reclining Figure", "Sho", "Horse and Rider", "Geometric Mouse", "Spirit's Flight"]],
 	["Fondren Library", []],
