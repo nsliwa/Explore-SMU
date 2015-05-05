@@ -22,7 +22,7 @@ locations = [
 	["Meadows School of Arts", []], 
 	["Cox School of Business", []],
 	["Dedman School of Humanities", []],
-	["Student Services", ["Gail O. and R. Gerald Turner Centennial Pavilion", "Cooper Centennial Fountain"]],
+	["Student Services", ["Centennial Pavilion", "Cooper Centennial Fountain"]],
 	["Athletics", ["Lloyd All Sports Center", "Gerald J. Ford Stadium", "Doak Walker Plaza", "Dedman Rec Center", "Moody Coliseum", "Peruna Statue"]],
 	["Meadows Museum", ["La Joie de Vivre", "Figure with Raised Hands", "Crouching Woman", "Three Piece Reclining Figure", "Sho", "Horse and Rider", "Geometric Mouse", "Spirit's Flight"]],
 	["Fondren Library", []],
