@@ -21,11 +21,18 @@ for (dirpath, dirnames, filenames) in walk(root):
 
 	    			print "path:", directory_path.split(root)[1].split("/")
 	    			print path
+
+	    			dbid = None
+
 	    			with open(path, "rb") as img:
 					    encoded_img = base64.b64encode(img.read())
-
 					    dbid = db.labeledinstances.insert(
-							{"feature":encoded_img,"label":label,"dsid":dsid}
-						);
+							{"feature":encoded_img,"label":label,"dsid":dsid},
+							safe = True
+						)
 
-					# os.remove(path)
+	    			if dbid is None:
+	    				print "for-sure error inserting"
+	    			else:
+	    				print "item id:", dbid
+	    				os.remove(path)
