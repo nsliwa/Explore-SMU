@@ -22,6 +22,7 @@
 		ADDD51BA1AF818C700D46E54 /* WPUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDD51B11AF818C700D46E54 /* WPUtils.m */; };
 		ADDD51BB1AF818C700D46E54 /* WPWatson.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDD51B31AF818C700D46E54 /* WPWatson.m */; };
 		ADDD51BC1AF818C700D46E54 /* WPWatsonQuestionResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDD51B51AF818C700D46E54 /* WPWatsonQuestionResponse.m */; };
+		CE1DAD441AFA52EE00BEC433 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1DAD431AFA52EE00BEC433 /* Place.swift */; };
 		EF931B171AF191C3006275A7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF931B161AF191C3006275A7 /* MapKit.framework */; };
 		EF941FA81AEFF1DF001C1332 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF941FA71AEFF1DF001C1332 /* AppDelegate.swift */; };
 		EF941FAA1AEFF1DF001C1332 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF941FA91AEFF1DF001C1332 /* ExploreViewController.swift */; };
@@ -70,6 +71,7 @@
 		ADDD51B31AF818C700D46E54 /* WPWatson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPWatson.m; sourceTree = "<group>"; };
 		ADDD51B41AF818C700D46E54 /* WPWatsonQuestionResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPWatsonQuestionResponse.h; sourceTree = "<group>"; };
 		ADDD51B51AF818C700D46E54 /* WPWatsonQuestionResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPWatsonQuestionResponse.m; sourceTree = "<group>"; };
+		CE1DAD431AFA52EE00BEC433 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		EF931B161AF191C3006275A7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		EF941FA21AEFF1DF001C1332 /* Explore@SMU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Explore@SMU.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF941FA61AEFF1DF001C1332 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 		EF941FA51AEFF1DF001C1332 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CE1DAD431AFA52EE00BEC433 /* Place.swift */,
 				ADDD51A01AF8186300D46E54 /* config.plist */,
 				AD388F1A1AF9619900B78492 /* AppInfo.plist */,
 				ADDD51A11AF8186300D46E54 /* fake.json */,
@@ -324,6 +327,7 @@
 				AD388F141AF89B7800B78492 /* LocationsTableViewController.swift in Sources */,
 				AD388F161AF8A8DD00B78492 /* LandmarksCollectionViewController.swift in Sources */,
 				AD388F191AF8C0B700B78492 /* LandmarkCollectionViewCell.swift in Sources */,
+				CE1DAD441AFA52EE00BEC433 /* Place.swift in Sources */,
 				EF941FCA1AEFF2A9001C1332 /* InvestigateViewController.swift in Sources */,
 				ADDD51B71AF818C700D46E54 /* WPMainViewController.m in Sources */,
 				ADDD51B91AF818C700D46E54 /* WPResultsTableViewController.m in Sources */,
