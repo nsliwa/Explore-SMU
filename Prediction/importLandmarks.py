@@ -31,8 +31,8 @@ for (dirpath, dirnames, filenames) in walk(root):
 							#safe = True
 						)
 
-	    			# if dbid is None:
-	    			# 	print "for-sure error inserting"
-	    			# else:
-	    			# 	print "item id:", dbid
-	    			# 	os.remove(path)
+	    			if dbid is None:
+	    				print "for-sure error inserting"
+	    			else:
+	    				print "item id:", dbid
+	    				os.remove(path)
