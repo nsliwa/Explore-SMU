@@ -24,7 +24,7 @@ class InvestigateViewController: UIViewController, NSURLSessionTaskDelegate, UII
     @IBOutlet weak var takePictureButton: UIBarButtonItem!
     @IBOutlet weak var overlayView: UIView!
     
-    
+    var uploadImage = false
     
     @IBOutlet weak var button_upload: UIButton!
     
@@ -84,9 +84,21 @@ class InvestigateViewController: UIViewController, NSURLSessionTaskDelegate, UII
         }
         
         // initialize data
-        var img: String = NSString(format: "%@", landmarkName) as String
+        var img: String = NSString(format: "%@-detail", landmarkName) as String
         targetImage = UIImage(named: img)
-        image_target.image = targetImage
+        if targetImage != nil {
+            image_target.image = targetImage
+        }
+        else {
+            image_target.image = UIImage(named: "placeholder_icon")
+        }
+        
+        
+        if let landmarks: NSDictionary = defaults.dictionaryForKey("Landmarks") {
+            let landmarkDict = NSMutableDictionary(dictionary: landmarks)
+            text_location.text = landmarkDict[landmarkName] as! String?
+        }
+        
         if capturedImage != nil {
             image_predict.image = capturedImage
         }
@@ -119,6 +131,7 @@ class InvestigateViewController: UIViewController, NSURLSessionTaskDelegate, UII
     
     @IBAction func done(sender: UIButton) {
         
+        uploadImage = false
         finishAndUpdate()
         
     }
@@ -160,6 +173,10 @@ class InvestigateViewController: UIViewController, NSURLSessionTaskDelegate, UII
         
         if capturedImage != nil {
             image_predict.image = capturedImage
+            
+        }
+        if(uploadImage) {
+            NSLog("call func to upload image now")
         }
         
         imagePickerController = nil
@@ -173,6 +190,8 @@ class InvestigateViewController: UIViewController, NSURLSessionTaskDelegate, UII
     {
         var image:UIImage = info[UIImagePickerControllerOriginalImage] as! UIImage
         capturedImage = image
+        
+        uploadImage = true
         
         finishAndUpdate()
     }

@@ -4,18 +4,20 @@
 <dict>
 	<key>Landmarks</key>
 	<dict>
-		<key>Caruth</key>
+		<key>Lyle</key>
 		<string>Caruth, front</string>
-		<key>Hunt Center</key>
+		<key>Hunt Institute</key>
 		<string>Caruth, 2nd floor - Hunt Institute</string>
+		<key>Innovation Gym</key>
+		<string>Caruth, 1st floor - Innovation Gym</string>
 		<key>Lyle Seal</key>
-		<string>Caruth, 2nd floor - Viewed from above</string>
+		<string>Caruth, 2nd floor - Viewed from 3rd floor</string>
 		<key>Wall of Patents</key>
 		<string>Caruth, 4th floor - Wall of Patents</string>
 		<key>Ampitheater</key>
 		<string>Caruth, back</string>
-		<key>Embrey</key>
-		<string>Embrey, 1st floor - Street Entrance</string>
+		<key>Dean&apos;s Suite</key>
+		<string>Embrey, 1st floor - Dean&apos;s Suite</string>
 		<key>Office of Recruitment</key>
 		<string>Embrey, 1st floor - Office of Recruitment</string>
 		<key>Junkins</key>
@@ -24,23 +26,40 @@
 		<string>Lloyd All Sports Center - Front Entrance</string>
 		<key>Gerald J. Ford Stadium</key>
 		<string>Gerald J. Ford Stadium - Gate 4 Entrance</string>
-		<key>Dedman Rect Center</key>
+		<key>Dedman Rec Center</key>
 		<string>Dedman Rec Center - Entrance</string>
 		<key>Moody Coliseum</key>
 		<string>Moody Coliseum - Entrance</string>
 		<key>Peruna Statue</key>
 		<string>Peruna Statue - Street View</string>
+		<key>Centennial Pavilion</key>
+		<string>Centennial Quadrangle - Centennial Pavillion</string>
+		<key>Cooper Centennial Fountain</key>
+		<string>Centennial Quadrangle - Cooper Centennial Fountain</string>
+		<key>Figure with Raised Hands</key>
+		<string>Figure with Raised Hands</string>
+		<key>Crouching Woman</key>
+		<string>Crouching Woman</string>
+		<key>Three Piece Reclining Figure</key>
+		<string>Three Piece Reclining Figure, left</string>
+		<key>Horse and Rider</key>
+		<string>Horse and Rider, left foot</string>
+		<key>Geometric Mouse II</key>
+		<string>Geometric Mouse II</string>
+		<key>Spirit&apos;s Flight</key>
+		<string>Spirit&apos;s Flight</string>
 	</dict>
 	<key>Locations</key>
 	<dict>
 		<key>Lyle School of Engineering</key>
 		<array>
-			<string>Caruth</string>
-			<string>Hunt Center</string>
+			<string>Lyle</string>
+			<string>Hunt Institute</string>
+			<string>Innovation Gym</string>
 			<string>Lyle Seal</string>
 			<string>Wall of Patents</string>
 			<string>Ampitheater</string>
-			<string>Embrey</string>
+			<string>Dean&apos;s Suite</string>
 			<string>Office of Recruitment</string>
 			<string>Junkins</string>
 		</array>
@@ -65,11 +84,9 @@
 		</array>
 		<key>Meadows Museum</key>
 		<array>
-			<string>La Joie de Vivre</string>
 			<string>Figure with Raised Hands</string>
 			<string>Crouching Woman</string>
 			<string>Three Piece Reclining Figure</string>
-			<string>Sho</string>
 			<string>Horse and Rider</string>
 			<string>Geometric Mouse II</string>
 			<string>Spirit&apos;s Flight</string>
