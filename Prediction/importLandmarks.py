@@ -27,8 +27,8 @@ for (dirpath, dirnames, filenames) in walk(root):
 	    			with open(path, "rb") as img:
 					    encoded_img = base64.b64encode(img.read())
 					    dbid = db.labeledinstances.insert(
-							{"feature":encoded_img,"label":label,"dsid":dsid},
-							safe = True
+							{"feature":encoded_img,"label":label,"dsid":dsid}#,
+							#safe = True
 						)
 
 	    			# if dbid is None:
