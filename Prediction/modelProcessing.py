@@ -112,7 +112,7 @@ for loc in db.locations.find():
 		c_gnb = GridSearchCV(GaussianNB(), cv=cv, param_grid={})
 		# c_gnb_pca = GridSearchCV(GaussianNB(), cv=cv, param_grid={})
 
-		c_mnnb = GridSearchCV(MultinomialNB(), cv=cv, param_grid={})
+		# c_mnnb = GridSearchCV(MultinomialNB(), cv=cv, param_grid={})
 		# c_mnnb_pca = GridSearchCV(MultinomialNB(), cv=cv, param_grid={})
 
 		# fit classifiers
@@ -122,22 +122,22 @@ for loc in db.locations.find():
 		c_gnb.fit(features, labels)
 		# c_gnb_pca.fit(features_transformed, labels)
 
-		c_mnnb.fit(features, labels)
+		# c_mnnb.fit(features, labels)
 		# c_mnnb_pca.fit(features_transformed, labels)
 
 		classifier = c_svc
 		print "\nclassifier scores-svc:\n\t", c_svc.grid_scores_, c_svc.best_score_
 		print "\nclassifier scores-gnb:\n\t", c_gnb.grid_scores_, c_gnb.best_score_
-		print "\nclassifier scores-mnnb:\n\t", c_mnnb.grid_scores_, c_mnnb.best_score_
+		# print "\nclassifier scores-mnnb:\n\t", c_mnnb.grid_scores_, c_mnnb.best_score_
 		
 
 		if(classifier.best_score_ < c_gnb.best_score_):
 			print "c_gnb is better"
 			classifier = c_gnb
 
-		if(classifier.best_score_ < c_mnnb.best_score_):
-			print "c_mnnb is better"
-			classifier = c_mnnb
+		# if(classifier.best_score_ < c_mnnb.best_score_):
+		# 	print "c_mnnb is better"
+		# 	classifier = c_mnnb
 
 		# if(classifier.best_score_ < c_gnb_pca.best_score_):
 		# 	print "c_gnb_pca is better"
