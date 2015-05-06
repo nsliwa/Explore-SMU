@@ -32,6 +32,10 @@ from sklearn.svm import SVC
 
 from sklearn.grid_search import GridSearchCV
 
+# skimage imports
+from skimage.feature import hog
+from skimage import data, color, exposure
+
 class GetLocationsHandler(BaseHandler):
 	def get(self):
 		'''GetLocations

@@ -57,8 +57,8 @@ class InvestigateViewController: UIViewController, NSURLSessionTaskDelegate, UII
         //setup NSURLSession (ephemeral)
         let sessionConfig: NSURLSessionConfiguration = NSURLSessionConfiguration.ephemeralSessionConfiguration()
         
-        sessionConfig.timeoutIntervalForRequest = 25.0;
-        sessionConfig.timeoutIntervalForResource = 28.0;
+        sessionConfig.timeoutIntervalForRequest = 125.0;
+        sessionConfig.timeoutIntervalForResource = 128.0;
         sessionConfig.HTTPMaximumConnectionsPerHost = 1;
         
         session = NSURLSession(configuration: sessionConfig, delegate: self, delegateQueue: nil)
@@ -211,7 +211,9 @@ class InvestigateViewController: UIViewController, NSURLSessionTaskDelegate, UII
     
     func uploadPredictImage() {
         // convert UIImage to NSData
-        var imageData = UIImagePNGRepresentation(image_predict.image)
+        var downSampledImg = resizeImage(image_predict.image!, newSize: CGSize(width: 100, height: 100))
+
+        var imageData = UIImagePNGRepresentation(downSampledImg)
         let base64ImageString = imageData.base64EncodedStringWithOptions(.allZeros)
         
         // build data dictionary
@@ -247,6 +249,7 @@ class InvestigateViewController: UIViewController, NSURLSessionTaskDelegate, UII
         
         // data to send in body of post request (send arguments as json)
         var error: NSError?
+//        var jsonUpload: NSDictionary = ["dsid":currentLocation]
         var jsonUpload: NSDictionary = ["feature":featureData, "dsid":currentLocation]
         //        var jsonUpload: NSDictionary = ["feature":"data", "dsid":0]
         
@@ -301,6 +304,7 @@ class InvestigateViewController: UIViewController, NSURLSessionTaskDelegate, UII
             else {
                 self.errorCount++
                 self.errorMsgs = self.errorMsgs + (NSString(format:"Error %d: Failed to connect to server\n", self.errorCount) as String)
+                NSLog("error: \n\t%@\n\t%@\n\t%@\n\t%@", err.localizedDescription, err.localizedDescription, err.localizedDescription, err.description)
             }
             
             if(self.errorCount > 0) {
@@ -329,6 +333,31 @@ class InvestigateViewController: UIViewController, NSURLSessionTaskDelegate, UII
         
     }
 
+    //http://stackoverflow.com/questions/6141298/how-to-scale-down-a-uiimage-and-make-it-crispy-sharp-at-the-same-time-instead
+    func resizeImage(image: UIImage, newSize: CGSize)-> UIImage {
+        let newRect: CGRect = CGRectIntegral(CGRectMake(0, 0, newSize.width, newSize.height))
+        let imageRef: CGImageRef = image.CGImage
+        
+        UIGraphicsBeginImageContextWithOptions(newSize, false, 0)
+        let context: CGContextRef = UIGraphicsGetCurrentContext()
+        
+        // Set the quality level to use when rescaling
+        CGContextSetInterpolationQuality(context, kCGInterpolationHigh)
+        let flipVertical: CGAffineTransform  = CGAffineTransformMake(1, 0, 0, -1, 0, newSize.height)
+        
+        CGContextConcatCTM(context, flipVertical)
+        // Draw into the context; this scales the image
+        CGContextDrawImage(context, newRect, imageRef)
+        
+        // Get the resized image from the context and a UIImage
+        let newImageRef: CGImageRef = CGBitmapContextCreateImage(context);
+        let newImage: UIImage = UIImage(CGImage: newImageRef)!
+        
+//        CGImageRelease(newImageRef)
+        UIGraphicsEndImageContext()
+        
+        return newImage
+    }
     
     
 }
