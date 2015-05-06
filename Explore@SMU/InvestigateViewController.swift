@@ -8,7 +8,7 @@
 
 import UIKit
 
-class InvestigateViewController: UIViewController, NSURLSessionTaskDelegate {
+class InvestigateViewController: UIViewController, NSURLSessionTaskDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     // UI elements
     @IBOutlet weak var image_target: UIImageView!
@@ -16,6 +16,15 @@ class InvestigateViewController: UIViewController, NSURLSessionTaskDelegate {
     var landmarkName: String = ""
     var capturedImage: UIImage! = nil
     var targetImage: UIImage! = nil
+    
+    var imagePickerController: UIImagePickerController! = nil
+    
+    // Camera overview
+    @IBOutlet weak var doneButton: UIBarButtonItem!
+    @IBOutlet weak var takePictureButton: UIBarButtonItem!
+    @IBOutlet weak var overlayView: UIView!
+    
+    
     
     @IBOutlet weak var button_upload: UIButton!
     
@@ -50,6 +59,11 @@ class InvestigateViewController: UIViewController, NSURLSessionTaskDelegate {
         sessionConfig.HTTPMaximumConnectionsPerHost = 1;
         
         session = NSURLSession(configuration: sessionConfig, delegate: self, delegateQueue: nil)
+        
+        if (!UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera)) {
+            button_upload.enabled = false
+            text_progress.text = "Oh, no! No camera found!"
+        }
         
     }
     
@@ -97,8 +111,80 @@ class InvestigateViewController: UIViewController, NSURLSessionTaskDelegate {
     }
     
     
-    @IBAction func onClick_upload(sender: UIButton) {
+    @IBAction func onClick_capture(sender: UIButton) {
         
+        showImagePickerForCamera()
+        
+    }
+    
+    @IBAction func done(sender: UIButton) {
+        
+        finishAndUpdate()
+        
+    }
+    
+    @IBAction func takePhoto(sender: UIButton) {
+        
+        imagePickerController.takePicture()
+        
+    }
+    
+    
+    func showImagePickerForCamera() {
+        
+        if(image_predict.isAnimating()) {
+            image_predict.stopAnimating()
+        }
+        
+        imagePickerController = UIImagePickerController()
+        imagePickerController.modalPresentationStyle = UIModalPresentationStyle.CurrentContext
+        imagePickerController.sourceType = UIImagePickerControllerSourceType.Camera
+        imagePickerController.delegate = self
+        
+        imagePickerController.showsCameraControls = false
+
+        /*
+        Load the overlay view from the OverlayView nib file. Self is the File's Owner for the nib file, so the overlayView outlet is set to the main view in the nib. Pass that view to the image picker controller to use as its overlay view, and set self's reference to the view to nil.
+        */
+        NSBundle.mainBundle().loadNibNamed("OverlayView", owner: self, options: nil)
+        overlayView.frame = imagePickerController.cameraOverlayView!.frame
+        imagePickerController.cameraOverlayView = overlayView
+        overlayView = nil
+        
+        presentViewController(imagePickerController, animated: true, completion: nil)
+        
+    }
+    
+    func finishAndUpdate() {
+        dismissViewControllerAnimated(true, completion: nil)
+        
+        if capturedImage != nil {
+            image_predict.image = capturedImage
+        }
+        
+        imagePickerController = nil
+    }
+    
+
+//    #pragma mark - UIImagePickerControllerDelegate
+    
+    // This method is called when an image has been chosen from the library or taken from the camera.
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject])
+    {
+        var image:UIImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        capturedImage = image
+        
+        finishAndUpdate()
+    }
+    
+    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    
+    
+    
+    func uploadPredictImage() {
         // convert UIImage to NSData
         var imageData = UIImagePNGRepresentation(image_predict.image)
         let base64ImageString = imageData.base64EncodedStringWithOptions(.allZeros)
@@ -106,9 +192,6 @@ class InvestigateViewController: UIViewController, NSURLSessionTaskDelegate {
         // build data dictionary
         var data: NSMutableDictionary = NSMutableDictionary()
         data["img"] = base64ImageString
-        //        data["gps"] = NSDictionary(dictionary: ["lat": capturedLocation.latitude, "long": capturedLocation.longitude])
-        //        data["compass"] = NSDictionary(dictionary: ["x": capturedMagneticField.field.x, "y": capturedMagneticField.field.y, "z": capturedMagneticField.field.z])
-        //        data["time"] = capturedTime
         
         // update text label with progress
         // update button background color with progress
