@@ -57,8 +57,8 @@ class InvestigateViewController: UIViewController, NSURLSessionTaskDelegate, UII
         //setup NSURLSession (ephemeral)
         let sessionConfig: NSURLSessionConfiguration = NSURLSessionConfiguration.ephemeralSessionConfiguration()
         
-        sessionConfig.timeoutIntervalForRequest = 125.0;
-        sessionConfig.timeoutIntervalForResource = 128.0;
+        sessionConfig.timeoutIntervalForRequest = 15.0;
+        sessionConfig.timeoutIntervalForResource = 18.0;
         sessionConfig.HTTPMaximumConnectionsPerHost = 1;
         
         session = NSURLSession(configuration: sessionConfig, delegate: self, delegateQueue: nil)
@@ -251,6 +251,7 @@ class InvestigateViewController: UIViewController, NSURLSessionTaskDelegate, UII
         var error: NSError?
 //        var jsonUpload: NSDictionary = ["dsid":currentLocation]
         var jsonUpload: NSDictionary = ["feature":featureData, "dsid":currentLocation]
+//        var jsonUpload: NSDictionary = ["feature":"feature", "dsid":currentLocation]
         //        var jsonUpload: NSDictionary = ["feature":"data", "dsid":0]
         
         let requestBody: NSData! = NSJSONSerialization.dataWithJSONObject(jsonUpload, options: NSJSONWritingOptions.PrettyPrinted, error: &error)
