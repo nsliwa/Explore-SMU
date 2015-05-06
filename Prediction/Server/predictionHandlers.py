@@ -119,103 +119,107 @@ class PredictLocationHandler(BaseHandler):
 
 		print "dsid: ", dsid
 
-		# parse out 2nd lvl json (img inside data)
-		feature_data = feature_data["img"]
+		# # parse out 2nd lvl json (img inside data)
+		# feature_data = feature_data["img"]
 
-		# decode current img from base64
-		# convert to np array
-		img = Image.open(BytesIO(base64.b64decode(feature_data)))
-		# downsample
-		width = 100
-		height = 100
-		img = img.resize((width, height), Image.ANTIALIAS)
-		# convert to numpy array
-		img = np.array(img)
+		# # decode current img from base64
+		# # convert to np array
+		# img = Image.open(BytesIO(base64.b64decode(feature_data)))
+		# # downsample
+		# width = 100
+		# height = 100
+		# img = img.resize((width, height), Image.ANTIALIAS)
+		# # convert to numpy array
+		# img = np.array(img)
 
-		# convert img to grayscale
-		# gray = color.rgb2gray(img)
-		gray= cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
-		gray = gray.astype(np.float)
+		# # convert img to grayscale
+		# # gray = color.rgb2gray(img)
+		# gray= cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+		# gray = gray.astype(np.float)
 
-		# process hog
-		fd, hog_img = hog(gray, orientations=8, pixels_per_cell=(32,32), cells_per_block=(1,1), visualise=True)
+		# # process hog
+		# fd, hog_img = hog(gray, orientations=8, pixels_per_cell=(32,32), cells_per_block=(1,1), visualise=True)
 
-		# convert to numpy array and reshape
-		gray = np.array(hog_img)
-		gray = gray.astype(np.float)
+		# # convert to numpy array and reshape
+		# gray = np.array(hog_img)
+		# gray = gray.astype(np.float)
 
 
-		# http://alexk2009.hubpages.com/hub/Storing-large-objects-in-MongoDB-using-Python
-		# create a new gridfs object.
-		fs = gridfs.GridFS(self.db)
+		# # http://alexk2009.hubpages.com/hub/Storing-large-objects-in-MongoDB-using-Python
+		# # create a new gridfs object.
+		# fs = gridfs.GridFS(self.db)
 
-		# tmp = self.db.models.find_one({"dsid":dsid});
-		# pca_id = tmp['pca']
+		# # tmp = self.db.models.find_one({"dsid":dsid});
+		# # pca_id = tmp['pca']
 
-		# # retrieve model that was stored using model_id
-		# # unpickle binary
-		# storedPCA = fs.get(pca_id).read()
-		# pca_retrieved = pickle.loads(storedPCA);
+		# # # retrieve model that was stored using model_id
+		# # # unpickle binary
+		# # storedPCA = fs.get(pca_id).read()
+		# # pca_retrieved = pickle.loads(storedPCA);
 
-		# reshape img array into 1d array
-		# apply pca transform
-		# fvals now contains feature data for prediction
-		fvals = gray.reshape( (1, -1) )[0]
-		# fvals = pca_retrieved.transform(fvals)
+		# # reshape img array into 1d array
+		# # apply pca transform
+		# # fvals now contains feature data for prediction
+		# fvals = gray.reshape( (1, -1) )[0]
+		# # fvals = pca_retrieved.transform(fvals)
 		
 
-		# load model from memory if exists, else:
-		# load the model from the database (using pickle and GridFS)
+		# # load model from memory if exists, else:
+		# # load the model from the database (using pickle and GridFS)
 
-		# if memory models !empty but dsid !exist in db
-		if(not self.clf == []):
-			if(self.clf.get(dsid) is None):
-				print 'Loading Model From DB'
-				tmp = self.db.models.find_one({"dsid":dsid})
-				model_id = tmp['model']
+		# # if memory models !empty but dsid !exist in db
+		# if(not self.clf == []):
+		# 	if(self.clf.get(dsid) is None):
+		# 		print 'Loading Model From DB'
+		# 		tmp = self.db.models.find_one({"dsid":dsid})
+		# 		model_id = tmp['model']
 
-				# http://alexk2009.hubpages.com/hub/Storing-large-objects-in-MongoDB-using-Python
-				# create a new gridfs object.
-				fs = gridfs.GridFS(self.db)
+		# 		# http://alexk2009.hubpages.com/hub/Storing-large-objects-in-MongoDB-using-Python
+		# 		# create a new gridfs object.
+		# 		fs = gridfs.GridFS(self.db)
 
-				# retrieve model that was stored using model_id
-				# unpickle binary
-				storedModel = fs.get(model_id).read()
-				model = pickle.loads(storedModel)
+		# 		# retrieve model that was stored using model_id
+		# 		# unpickle binary
+		# 		storedModel = fs.get(model_id).read()
+		# 		model = pickle.loads(storedModel)
 
-				# store for later
-				self.clf[dsid] = model
+		# 		# store for later
+		# 		self.clf[dsid] = model
 
-		# if memory models not initialized
-		else:
-			print 'Loading Model From DB and Initializing'
-			tmp = self.db.models.find_one({"dsid":dsid})
-			model_id = tmp['model']
+		# # if memory models not initialized
+		# else:
+		# 	print 'Loading Model From DB and Initializing'
+		# 	tmp = self.db.models.find_one({"dsid":dsid})
+		# 	model_id = tmp['model']
 
-			# retrieve model that was stored using model_id
-			# unpickle binary
-			storedModel = fs.get(model_id).read()
-			model = pickle.loads(storedModel)
+		# 	# retrieve model that was stored using model_id
+		# 	# unpickle binary
+		# 	storedModel = fs.get(model_id).read()
+		# 	model = pickle.loads(storedModel)
 
-			# initialize memory models
-			self.clf = {dsid: model}
+		# 	# initialize memory models
+		# 	self.clf = {dsid: model}
 		
-		model = self.clf[dsid]
-		print "dsid: ", dsid, " | model data: ", model
+		# model = self.clf[dsid]
+		# print "dsid: ", dsid, " | model data: ", model
 
-		if model:
-			print model.coef_
-			print np.shape(model)
+		# if model:
+		# 	print model.coef_
+		# 	print np.shape(model)
 		
-		# predicted label
-		predLabel_id = model.predict(fvals)
-		landmarks = self.db.locations.find_one( {"location": dsid} )
-		landmarks = landmarks["landmarks"]
-		predLabel = landmarks[ int(predLabel_id[0]) ]
+		# # predicted label
+		# predLabel_id = model.predict(fvals)
+		# landmarks = self.db.locations.find_one( {"location": dsid} )
+		# landmarks = landmarks["landmarks"]
+		# predLabel = landmarks[ int(predLabel_id[0]) ]
 
-		# predLabel = self.db.locations.find_one({"location_id":int(predLabel_id[0])});
-		# predLabel = predLabel["location"]
+		# # predLabel = self.db.locations.find_one({"location_id":int(predLabel_id[0])});
+		# # predLabel = predLabel["location"]
 
-		print "predicted label: ", predLabel
+		# print "predicted label: ", predLabel
 
-		self.write_json({"label":predLabel})
+		# self.write_json({"label":predLabel})
+
+
+
+		self.write_json({"label":"predLabel"})
