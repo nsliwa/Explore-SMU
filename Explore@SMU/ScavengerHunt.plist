@@ -2,8 +2,35 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>FoundLandmarks</key>
-	<array/>
+	<key>Landmarks</key>
+	<dict>
+		<key>Caruth</key>
+		<string>Caruth, front</string>
+		<key>Hunt Center</key>
+		<string>Caruth, 2nd floor - Hunt Institute</string>
+		<key>Lyle Seal</key>
+		<string>Caruth, 2nd floor - Viewed from above</string>
+		<key>Wall of Patents</key>
+		<string>Caruth, 4th floor - Wall of Patents</string>
+		<key>Ampitheater</key>
+		<string>Caruth, back</string>
+		<key>Embrey</key>
+		<string>Embrey, 1st floor - Street Entrance</string>
+		<key>Office of Recruitment</key>
+		<string>Embrey, 1st floor - Office of Recruitment</string>
+		<key>Junkins</key>
+		<string>Junkins, 1st floor - Quad Entrance</string>
+		<key>Lloyd All Sports Center</key>
+		<string>Lloyd All Sports Center - Front Entrance</string>
+		<key>Gerald J. Ford Stadium</key>
+		<string>Gerald J. Ford Stadium - Gate 4 Entrance</string>
+		<key>Dedman Rect Center</key>
+		<string>Dedman Rec Center - Entrance</string>
+		<key>Moody Coliseum</key>
+		<string>Moody Coliseum - Entrance</string>
+		<key>Peruna Statue</key>
+		<string>Peruna Statue - Street View</string>
+	</dict>
 	<key>Locations</key>
 	<dict>
 		<key>Lyle School of Engineering</key>
@@ -50,5 +77,11 @@
 		<key>Residential Commons</key>
 		<array/>
 	</dict>
+	<key>Server_URL</key>
+	<string>http://teamben.cloudapp.net:8000</string>
+	<key>Server_URL-2</key>
+	<string>http://nicoles-macbook-pro.local:8000</string>
+	<key>FoundLandmarks</key>
+	<array/>
 </dict>
 </plist>

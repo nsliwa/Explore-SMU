@@ -11,6 +11,7 @@
 		AD388F141AF89B7800B78492 /* LocationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD388F131AF89B7800B78492 /* LocationsTableViewController.swift */; };
 		AD388F161AF8A8DD00B78492 /* LandmarksCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD388F151AF8A8DD00B78492 /* LandmarksCollectionViewController.swift */; };
 		AD388F191AF8C0B700B78492 /* LandmarkCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD388F181AF8C0B700B78492 /* LandmarkCollectionViewCell.swift */; };
+		AD388F1B1AF9619900B78492 /* AppInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD388F1A1AF9619900B78492 /* AppInfo.plist */; };
 		ADDD519D1AF7F35600D46E54 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDD519C1AF7F35600D46E54 /* MasterViewController.swift */; };
 		ADDD51A31AF8186300D46E54 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADDD51A01AF8186300D46E54 /* config.plist */; };
 		ADDD51A41AF8186300D46E54 /* fake.json in Resources */ = {isa = PBXBuildFile; fileRef = ADDD51A11AF8186300D46E54 /* fake.json */; };
@@ -48,6 +49,7 @@
 		AD388F131AF89B7800B78492 /* LocationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsTableViewController.swift; sourceTree = "<group>"; };
 		AD388F151AF8A8DD00B78492 /* LandmarksCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandmarksCollectionViewController.swift; sourceTree = "<group>"; };
 		AD388F181AF8C0B700B78492 /* LandmarkCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandmarkCollectionViewCell.swift; sourceTree = "<group>"; };
+		AD388F1A1AF9619900B78492 /* AppInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AppInfo.plist; sourceTree = "<group>"; };
 		ADDD519C1AF7F35600D46E54 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		ADDD51A01AF8186300D46E54 /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
 		ADDD51A11AF8186300D46E54 /* fake.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fake.json; sourceTree = "<group>"; };
@@ -106,9 +108,9 @@
 		AD388F171AF8A8EC00B78492 /* Scavenger Hunt */ = {
 			isa = PBXGroup;
 			children = (
-				EF941FC91AEFF2A9001C1332 /* InvestigateViewController.swift */,
 				AD388F131AF89B7800B78492 /* LocationsTableViewController.swift */,
 				AD388F151AF8A8DD00B78492 /* LandmarksCollectionViewController.swift */,
+				EF941FC91AEFF2A9001C1332 /* InvestigateViewController.swift */,
 				AD388F181AF8C0B700B78492 /* LandmarkCollectionViewCell.swift */,
 			);
 			name = "Scavenger Hunt";
@@ -177,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				ADDD51A01AF8186300D46E54 /* config.plist */,
+				AD388F1A1AF9619900B78492 /* AppInfo.plist */,
 				ADDD51A11AF8186300D46E54 /* fake.json */,
 				ADDD51A21AF8186300D46E54 /* WatsonPhotography-Prefix.pch */,
 				ADDD51A51AF8186F00D46E54 /* BridgingHeader.h */,
@@ -294,6 +297,7 @@
 				ADDD51A41AF8186300D46E54 /* fake.json in Resources */,
 				EF941FB41AEFF1E0001C1332 /* LaunchScreen.xib in Resources */,
 				EF941FB11AEFF1E0001C1332 /* Images.xcassets in Resources */,
+				AD388F1B1AF9619900B78492 /* AppInfo.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -24,7 +24,7 @@ locations = [
 	["Dedman School of Humanities", []],
 	["Student Services", ["Centennial Pavilion", "Cooper Centennial Fountain"]],
 	["Athletics", ["Lloyd All Sports Center", "Gerald J. Ford Stadium", "Doak Walker Plaza", "Dedman Rec Center", "Moody Coliseum", "Peruna Statue"]],
-	["Meadows Museum", ["La Joie de Vivre", "Figure with Raised Hands", "Crouching Woman", "Three Piece Reclining Figure", "Sho", "Horse and Rider", "Geometric Mouse", "Spirit's Flight"]],
+	["Meadows Museum", ["Figure with Raised Hands", "Crouching Woman", "Three Piece Reclining Figure","Horse and Rider", "Geometric Mouse II", "Spirit's Flight"]],
 	["Fondren Library", []],
 	["Residential Commons", []],
 	["Testing", ["Starbucks", "Blue Cups", "Candle", "Remote", "Ball"]]

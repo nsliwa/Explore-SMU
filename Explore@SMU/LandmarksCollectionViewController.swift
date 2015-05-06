@@ -82,6 +82,13 @@ class LandmarksCollectionViewController: UICollectionViewController {
     
         return cell
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let cell = sender as! LandmarkCollectionViewCell
+        
+        let vc = segue.destinationViewController as! InvestigateViewController
+        vc.landmarkName = cell.landmarkLabel.text! as String
+    }
 
     // MARK: UICollectionViewDelegate
 
