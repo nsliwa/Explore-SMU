@@ -88,6 +88,7 @@ class LandmarksCollectionViewController: UICollectionViewController {
         
         let vc = segue.destinationViewController as! InvestigateViewController
         vc.landmarkName = cell.landmarkLabel.text! as String
+        vc.currentLocation = location
     }
 
     // MARK: UICollectionViewDelegate

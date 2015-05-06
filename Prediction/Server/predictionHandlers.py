@@ -96,6 +96,12 @@ class AddLearningDataHandler(BaseHandler):
 
 
 class PredictLocationHandler(BaseHandler):
+	def get(self):
+		'''PredictLocation
+		'''
+		self.write("Need to use post request!")		
+
+
 	def post(self):
 		'''PredictLocation
 		'''

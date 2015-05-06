@@ -5,6 +5,7 @@
 //  Created by ch484-mac5 on 4/28/15.
 //  Copyright (c) 2015 Team B.E.N. All rights reserved.
 //
+// ImagePickerController code adapted from ObjC from here: https://developer.apple.com/library/ios/samplecode/PhotoPicker/Introduction/Intro.html#//apple_ref/doc/uid/DTS40010196
 
 import UIKit
 
@@ -14,6 +15,7 @@ class InvestigateViewController: UIViewController, NSURLSessionTaskDelegate, UII
     @IBOutlet weak var image_target: UIImageView!
     @IBOutlet weak var image_predict: UIImageView!
     var landmarkName: String = ""
+    var currentLocation: String = ""
     var capturedImage: UIImage! = nil
     var targetImage: UIImage! = nil
     
@@ -34,7 +36,8 @@ class InvestigateViewController: UIViewController, NSURLSessionTaskDelegate, UII
     
     // session config
     //    let SERVER_URL: NSString = "http://guests-mac-mini-2.local:8000"
-    var SERVER_URL: NSString = "http://nicoles-macbook-pro.local:8000"
+//    var SERVER_URL: NSString = "http://nicoles-macbook-pro.local:8000"
+    var SERVER_URL: NSString = "http://teamben.cloudapp.net:8000"
     let UPDATE_INTERVAL = 1/10.0
     
     var session: NSURLSession! = nil
@@ -54,14 +57,14 @@ class InvestigateViewController: UIViewController, NSURLSessionTaskDelegate, UII
         //setup NSURLSession (ephemeral)
         let sessionConfig: NSURLSessionConfiguration = NSURLSessionConfiguration.ephemeralSessionConfiguration()
         
-        sessionConfig.timeoutIntervalForRequest = 5.0;
-        sessionConfig.timeoutIntervalForResource = 8.0;
+        sessionConfig.timeoutIntervalForRequest = 25.0;
+        sessionConfig.timeoutIntervalForResource = 28.0;
         sessionConfig.HTTPMaximumConnectionsPerHost = 1;
         
         session = NSURLSession(configuration: sessionConfig, delegate: self, delegateQueue: nil)
         
         if (!UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera)) {
-            button_upload.enabled = false
+            button_upload.userInteractionEnabled = false
             text_progress.text = "Oh, no! No camera found!"
         }
         
@@ -78,6 +81,7 @@ class InvestigateViewController: UIViewController, NSURLSessionTaskDelegate, UII
         
         if let serverURL = defaults.stringForKey("Server_URL") as String? {
             SERVER_URL = serverURL
+            NSLog("Connecting to server:%@", SERVER_URL)
         }
         else {
             NSLog("error in predicting")
@@ -177,6 +181,8 @@ class InvestigateViewController: UIViewController, NSURLSessionTaskDelegate, UII
         }
         if(uploadImage) {
             NSLog("call func to upload image now")
+            
+            uploadPredictImage()
         }
         
         imagePickerController = nil
@@ -215,7 +221,7 @@ class InvestigateViewController: UIViewController, NSURLSessionTaskDelegate, UII
         // update text label with progress
         // update button background color with progress
         button_upload.backgroundColor = UIColor.blueColor()
-        self.text_progress.text = "Uploading"
+        self.text_progress.text = "Submitting Answer"
         
         // API call
         predictFeature(data)
@@ -236,11 +242,12 @@ class InvestigateViewController: UIViewController, NSURLSessionTaskDelegate, UII
         
         // setup the url
         let baseURL: NSString = NSString(format: "%@/PredictLocation",SERVER_URL)
+        NSLog("predicting to: %@", baseURL)
         let postURL: NSURL = NSURL(string: baseURL as String)!
         
         // data to send in body of post request (send arguments as json)
         var error: NSError?
-        var jsonUpload: NSDictionary = ["feature":featureData, "dsid":dsid]
+        var jsonUpload: NSDictionary = ["feature":featureData, "dsid":currentLocation]
         //        var jsonUpload: NSDictionary = ["feature":"data", "dsid":0]
         
         let requestBody: NSData! = NSJSONSerialization.dataWithJSONObject(jsonUpload, options: NSJSONWritingOptions.PrettyPrinted, error: &error)

@@ -52,13 +52,19 @@ class BaseHandler(tornado.web.RequestHandler):
            HTTP error
         '''
 
-        self.write("Welcome to exploreSMU Learn Server"
-            "\nPost options:"
-            "\n\t* AddLandmarkData - input: dsid (location), feature (base64 image), label (landmark)"
-            "\n\t* PredictLandmark - input: dsid (location), feature (base64 image)"
-            "\nGet options:"
-            "\n\t* GetLocations - input: {none}"
-            "\n\t* GetLandmarks - input: dsid (location)")
+        self.write("Welcome to exploreSMU Learn Server")
+        self.write("\nPost options:")
+        self.write("\n\t* AddLandmarkData - input: dsid (location), feature (base64 image), label (landmark)")
+        self.write("\n\t* PredictLandmark - input: dsid (location), feature (base64 image)")
+        self.write("\nGet options:")
+        self.write("\n\t* GetLocations - input: {none}")
+        self.write("\n\t* GetLandmarks - input: dsid (location)"))
+            # "\nPost options:"
+            # "\n\t* AddLandmarkData - input: dsid (location), feature (base64 image), label (landmark)"
+            # "\n\t* PredictLandmark - input: dsid (location), feature (base64 image)"
+            # "\nGet options:"
+            # "\n\t* GetLocations - input: {none}"
+            # "\n\t* GetLandmarks - input: dsid (location)")
         # raise HTTPError(404)
 
     @property
