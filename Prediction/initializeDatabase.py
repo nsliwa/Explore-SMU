@@ -19,7 +19,7 @@ os.makedirs(root)
 
 locations = [
 	["Athletics", ["Althetics Peruna", "Athletics Dedman Rec Center", "Athletics Doak Walker Plaza", "Athletics Moody Coliseum", "Athletics Soccer Field"]],
-	["Blanton Student Services", ["Blanton Building Number", "Blanton Centennial Pavilion", "Blanton Cooper Centennial Fountain", "Blanton Entrance", "Blanton Fountain"]].
+	["Blanton Student Services", ["Blanton Building Number", "Blanton Centennial Pavilion", "Blanton Cooper Centennial Fountain", "Blanton Entrance", "Blanton Fountain"]],
 	["Cox School of Business", ["Cox", "Cox Alumni", "Cox Computer Lab", "Cox Networking", "Cox Quad", "Cox Quad Entrance", "Cox Trade"]],
 	["Dedman School of Humanities", ["Dedman", "Dedman Dallas Hall Entrance", "Dedman Dallas Hall Portrait", "Dedman Dallas Hall Seal"]],
 	["Hughes Trigg Student Center", ["Hughes Trigg Basement", "Hughes Trigg Commons", "Hughes Trigg Cafe 100", "Hughes Trigg M Lounge", "Hughes Trigg Mail", "Hughes Trigg Mane Course", "Hughes Trigg Peruna Statue", "Hughes Trigg SMU Unbridled"]],
