@@ -4,24 +4,103 @@
 <dict>
 	<key>Landmarks</key>
 	<dict>
-		<key>Lyle</key>
-		<string>Caruth, front</string>
-		<key>Hunt Institute</key>
-		<string>Caruth, 2nd floor - Hunt Institute</string>
-		<key>Innovation Gym</key>
-		<string>Caruth, 1st floor - Innovation Gym</string>
-		<key>Lyle Seal</key>
-		<string>Caruth, 2nd floor - Viewed from 3rd floor</string>
-		<key>Wall of Patents</key>
-		<string>Caruth, 4th floor - Wall of Patents</string>
-		<key>Ampitheater</key>
-		<string>Caruth, back</string>
-		<key>Dean&apos;s Suite</key>
-		<string>Embrey, 1st floor - Dean&apos;s Suite</string>
-		<key>Office of Recruitment</key>
-		<string>Embrey, 1st floor - Office of Recruitment</string>
+		<key>Cox Alumni</key>
+		<array/>
+		<key>Cox</key>
+		<array>
+			<string>Cox, Entrance from Blvd</string>
+		</array>
 		<key>Junkins</key>
-		<string>Junkins, 1st floor - Quad Entrance</string>
+		<array>
+			<string>Junkins, 1st floor - Quad Entrance</string>
+		</array>
+		<key>Office of Recruitment</key>
+		<array>
+			<string>Embrey, 1st floor - Office of Recruitment</string>
+		</array>
+		<key>Dean&apos;s Suite</key>
+		<array>
+			<string>Embrey, 1st floor - Dean&apos;s Suite</string>
+		</array>
+		<key>Ampitheater</key>
+		<array>
+			<string>Caruth, back</string>
+		</array>
+		<key>Wall of Patents</key>
+		<array>
+			<string>Caruth, 4th floor - Wall of Patents</string>
+		</array>
+		<key>Lyle Seal</key>
+		<array>
+			<string>Caruth, 2nd floor - Viewed from 3rd floor</string>
+		</array>
+		<key>Innovation Gym</key>
+		<array>
+			<string>Caruth, 1st floor - Innovation Gym</string>
+		</array>
+		<key>Hunt Institute</key>
+		<array>
+			<string>Caruth, 2nd floor - Hunt Institute</string>
+		</array>
+		<key>Lyle</key>
+		<array>
+			<string>Caruth, front</string>
+		</array>
+		<key>Hughes Trigg SMU Unbridled</key>
+		<array>
+			<string>Hughes Trigg Basement - SMU Unbridled</string>
+		</array>
+		<key>Hughes Trigg Peruna Statue</key>
+		<array>
+			<string>Hughes Trigg 1st floor - Peruna Statue</string>
+		</array>
+		<key>Hughes Trigg Mane Course</key>
+		<array>
+			<string>Hughes Trigg 1st floor - Stair leading to Mane Course</string>
+		</array>
+		<key>Hughes Trigg Mail</key>
+		<array>
+			<string>Hughes Trigg 1st floor - Post Office</string>
+			<string></string>
+		</array>
+		<key>Hughes Trigg M Lounge</key>
+		<array>
+			<string>Hughes Trigg 1st floor - M Lounge</string>
+			<string></string>
+		</array>
+		<key>Hughes Trigg Cafe 100</key>
+		<array>
+			<string>Hughes Trigg 1st floor - Cafe 100</string>
+			<string></string>
+		</array>
+		<key>Huges Trigg Commons</key>
+		<array>
+			<string>Huges Trigg 1st floor - Commons</string>
+			<string></string>
+		</array>
+		<key>Huges Trigg Basement</key>
+		<array>
+			<string>Huges Trigg Basement - Centennial Hall</string>
+			<string></string>
+		</array>
+		<key>Perkins Library Entrance</key>
+		<array>
+			<string>Bridwell Library, entrance</string>
+			<string></string>
+		</array>
+		<key>Perkins Chapel Garden</key>
+		<array>
+			<string>Perkins Chapel, near front entrance</string>
+			<string></string>
+		</array>
+		<key>Perkins Chapel</key>
+		<array>
+			<string>Perkins Chapel, near front entrance</string>
+			<string></string>
+		</array>
+	</dict>
+	<key>Landmarks-old</key>
+	<dict>
 		<key>Lloyd All Sports Center</key>
 		<string>Lloyd All Sports Center - Front Entrance</string>
 		<key>Gerald J. Ford Stadium</key>
@@ -51,48 +130,97 @@
 	</dict>
 	<key>Locations</key>
 	<dict>
+		<key>Perkins School of Theology</key>
+		<array>
+			<string>Perkins Chapel</string>
+			<string>Perkins Chapel Garden</string>
+			<string>Perkins Library Entrance</string>
+		</array>
+		<key>Hughes Trigg Student Center</key>
+		<array>
+			<string>Huges Trigg Basement</string>
+			<string>Huges Trigg Commons</string>
+			<string>Hughes Trigg Cafe 100</string>
+			<string>Hughes Trigg M Lounge</string>
+			<string>Hughes Trigg Mail</string>
+			<string>Hughes Trigg Mane Course</string>
+			<string>Hughes Trigg Peruna Statue</string>
+			<string>Hughes Trigg SMU Unbridled</string>
+		</array>
 		<key>Lyle School of Engineering</key>
 		<array>
 			<string>Lyle</string>
-			<string>Hunt Institute</string>
-			<string>Innovation Gym</string>
+			<string>Lyle Hunt Institute</string>
+			<string>Lyle Innovation Gym</string>
 			<string>Lyle Seal</string>
-			<string>Wall of Patents</string>
-			<string>Ampitheater</string>
-			<string>Dean&apos;s Suite</string>
-			<string>Office of Recruitment</string>
-			<string>Junkins</string>
+			<string>Lyle Wall of Patents</string>
+			<string>Lyle Ampitheater</string>
+			<string>Lyle Dean&apos;s Suite</string>
+			<string>Lyle Office of Recruitment</string>
+			<string>Lyle Junkins</string>
 		</array>
 		<key>Cox School of Business</key>
-		<array/>
+		<array>
+			<string>Cox</string>
+			<string>Cox Alumni</string>
+			<string>Cox Computer Lab</string>
+			<string>Cox Networking</string>
+			<string>Cox Quad</string>
+			<string>Cox Quad Entrance</string>
+			<string>Cox Trade</string>
+		</array>
 		<key>Meadows School of Arts</key>
-		<array/>
+		<array>
+			<string>Meadows</string>
+			<string>Meadows Auditorium</string>
+			<string>Meadows Creative Computing</string>
+			<string>Meadows Entrance Art</string>
+			<string>Meadows Entrance Painting</string>
+			<string>Meadows Library</string>
+			<string>Meadows Lounge</string>
+			<string>Meadows Painting</string>
+			<string>Meadows Tech Effect</string>
+		</array>
 		<key>Dedman School of Humanities</key>
-		<array/>
+		<array>
+			<string>Dedman</string>
+			<string>Dedman Dallas Hall Entrance</string>
+			<string>Dedman Dallas Hall Portrait</string>
+			<string>Dedman Dallas Hall Seal</string>
+		</array>
 		<key>Athletics</key>
 		<array>
-			<string>Lloyd All Sports Center</string>
-			<string>Gerald J. Ford Stadium</string>
-			<string>Dedman Rec Center</string>
-			<string>Moody Coliseum</string>
-			<string>Peruna Statue</string>
+			<string>Althetics Peruna</string>
+			<string>Athletics Dedman Rec Center</string>
+			<string>Athletics Doak Walker Plaza</string>
+			<string>Athletics Moody Coliseum</string>
+			<string>Athletics Soccer Field</string>
 		</array>
-		<key>Student Services</key>
+		<key>Blanton Student Servies</key>
 		<array>
-			<string>Centennial Pavilion</string>
-			<string>Cooper Centennial Fountain</string>
+			<string>Blanton Building Number</string>
+			<string>Blanton Centennial Pavilion</string>
+			<string>Blanton Cooper Centennial Fountain</string>
+			<string>Blanton Entrance</string>
+			<string>Blanton Fountain</string>
 		</array>
 		<key>Meadows Museum</key>
 		<array>
-			<string>Figure with Raised Hands</string>
-			<string>Crouching Woman</string>
-			<string>Three Piece Reclining Figure</string>
-			<string>Horse and Rider</string>
-			<string>Geometric Mouse II</string>
-			<string>Spirit&apos;s Flight</string>
+			<string>Meadows M Figure with Raised Arms</string>
+			<string>Meadows M Crouching Woman</string>
+			<string>Meadows M Three Piece Reclining Figure</string>
+			<string>Meadows M Horse and Rider</string>
+			<string>Meadows M Geometric Mouse II</string>
+			<string>Meadows M Spirit&apos;s Flight</string>
 		</array>
 		<key>Residential Commons</key>
-		<array/>
+		<array>
+			<string>Residential Commons Armstrong</string>
+			<string>Residential Commons Band Hall</string>
+			<string>Residential Commons Blue Light</string>
+			<string>Residential Commons Crow</string>
+			<string>Residential Commons Lloyd</string>
+		</array>
 	</dict>
 	<key>Server_URL</key>
 	<string>http://teamben.cloudapp.net:8000</string>
