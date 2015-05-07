@@ -18,16 +18,16 @@ os.makedirs(root)
 
 
 locations = [
-	["Lyle School of Engineering", ["Dean's Suite", "Ampitheater", "Hunt Institute", "Innovation Gym", "Junkins", "Lyle", "Lyle Seal", "Office of Recruitment", "Wall of Patents"]],
-	["Meadows School of Arts", []], 
-	["Cox School of Business", []],
-	["Dedman School of Humanities", []],
-	["Student Services", ["Centennial Pavilion", "Cooper Centennial Fountain"]],
-	["Athletics", ["Lloyd All Sports Center", "Gerald J. Ford Stadium", "Doak Walker Plaza", "Dedman Rec Center", "Moody Coliseum", "Peruna Statue"]],
-	["Meadows Museum", ["Crouching Woman", "Figure with Raised Arms", "Geometric Mouse II", "Horse and Rider", "Spirit's Flight", "Three Piece Reclining Figure"]],
-	["Fondren Library", []],
-	["Residential Commons", []],
-	["Testing", ["Starbucks", "Blue Cups", "Candle", "Remote", "Ball"]]
+	["Athletics", ["Athletics Peruna", "Athletics Dedman Rec Center", "Athletics Doak Walker Plaza", "Athletics Moody Coliseum", "Athletics Soccer Field"]],
+	["Blanton Student Services", ["Blanton Building Number", "Blanton Centennial Pavilion", "Blanton Cooper Centennial Fountain", "Blanton Entrance", "Blanton Fountain"]].
+	["Cox School of Business", ["Cox", "Cox Alumni", "Cox Computer Lab", "Cox Networking", "Cox Quad", "Cox Quad Entrance", "Cox Trade"]],
+	["Dedman School of Humanities", ["Dedman", "Dedman Dallas Hall Entrance", "Dedman Dallas Hall Portrait", "Dedman Dallas Hall Seal"]],
+	["Hughes Trigg Student Center", ["Hughes Trigg Basement", "Hughes Trigg Commons", "Hughes Trigg Cafe 100", "Hughes Trigg M Lounge", "Hughes Trigg Mail", "Hughes Trigg Mane Course", "Hughes Trigg Peruna Statue", "Hughes Trigg SMU Unbridled"]],
+	["Lyle School of Engineering", ["Lyle", "Lyle Ampitheater", "Lyle Dean's Suite", "Lyle Hunt Institute", "Lyle Innovation Gym", "Lyle Junkins", "Lyle Office of Recruitment", "Lyle Seal", "Lyle Wall of Patents"]],
+	["Meadows School of Arts", ["Meadows", "Meadows Auditorium", "Meadows Creative Computing", "Meadows Entrance Art", "Meadows Entrance Painting", "Meadows Library", "Meadows Lounge", "Meadows Painting", "Meadows Tech Effect"]], 
+	["Meadows Museum", ["Meadows M Crouching Woman", "Meadows M Figure with Raised Arms", "Meadows M Geometric Mouse II", "Meadows M Horse and Rider", "Meadows M Spirit's Flight", "Meadows M Three Piece Reclining Figure"]],
+	["Perkins School of Theology", ["Perkins Chapel", "Perkins Chapel Garden", "Perkins Library Entrance"]],
+	["Residential Commons", ["Residential Commons Armstrong", "Residential Commons Band Hall", "Residential Commons Blue Light", "Residential Commons Crow", "Residential Commons Lloyd"]]
 ]
 
 for loc in locations:
