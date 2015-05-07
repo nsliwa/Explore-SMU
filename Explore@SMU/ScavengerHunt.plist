@@ -44,9 +44,9 @@
 		<array>
 			<string>Crouching Woman</string>
 		</array>
-		<key>Meadows M Figure with Raised Hands</key>
+		<key>Meadows M Figure with Raised Arms</key>
 		<array>
-			<string>Figure with Raised Hands</string>
+			<string>Meadows M Figure with Raised Arms</string>
 		</array>
 		<key>Blanton Building Number</key>
 		<array>
@@ -236,7 +236,7 @@
 			<string>Huges Trigg 1st floor - Commons</string>
 			<string></string>
 		</array>
-		<key>Hughes Trigg Basement</key>
+		<key>Huges Trigg Basement</key>
 		<array>
 			<string>Huges Trigg Basement - Centennial Hall</string>
 			<string></string>
