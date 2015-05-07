@@ -162,9 +162,9 @@ for loc in db.locations.find():
 		bytes = pickle.dumps(classifier);
 		# bytes_pca = pickle.dumps(pca)
 
-		if classifier:
-			print "\nc_coef:\n\t", classifier.coef_
-			print "\nc_shape:\n\t", np.shape(classifier.coef_), np.shape(classifier.n_support_) 
+		# if classifier:
+			# print "\nc_coef:\n\t", classifier.coef_
+			# print "\nc_shape:\n\t", np.shape(classifier.coef_), np.shape(classifier.n_support_) 
 
 		# http://alexk2009.hubpages.com/hub/Storing-large-objects-in-MongoDB-using-Python
 		# create a new gridfs object.

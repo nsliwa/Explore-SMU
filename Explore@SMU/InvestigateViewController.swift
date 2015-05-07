@@ -18,6 +18,7 @@ class InvestigateViewController: UIViewController, NSURLSessionTaskDelegate, UII
     var currentLocation: String = ""
     var capturedImage: UIImage! = nil
     var targetImage: UIImage! = nil
+    var landmarkObject: NSMutableArray = []
     
     var imagePickerController: UIImagePickerController! = nil
     
@@ -100,7 +101,8 @@ class InvestigateViewController: UIViewController, NSURLSessionTaskDelegate, UII
         
         if let landmarks: NSDictionary = defaults.dictionaryForKey("Landmarks") {
             let landmarkDict = NSMutableDictionary(dictionary: landmarks)
-            text_location.text = landmarkDict[landmarkName] as! String?
+            landmarkObject = landmarkDict.objectForKey(landmarkName) as! NSMutableArray
+            text_location.text = landmarkObject[0] as! NSString as String
         }
         
         if capturedImage != nil {

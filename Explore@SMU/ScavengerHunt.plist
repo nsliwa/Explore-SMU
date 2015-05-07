@@ -4,6 +4,50 @@
 <dict>
 	<key>Landmarks</key>
 	<dict>
+		<key>Residential Commons Armstrong</key>
+		<array>
+			<string>Armstrong Commons</string>
+		</array>
+		<key>Residential Commons Band Hall</key>
+		<array>
+			<string>Band Hall</string>
+		</array>
+		<key>Residential Commons Blue Light</key>
+		<array>
+			<string>Armstrong Commons - Blue Light </string>
+		</array>
+		<key>Residential Commons Crow</key>
+		<array>
+			<string>Crow Commons</string>
+		</array>
+		<key>Residential Commons Loyd</key>
+		<array>
+			<string>Loyd Commons</string>
+		</array>
+		<key>Meadows M Spirit&apos;s Flight</key>
+		<array>
+			<string>Spirit&apos;s Flight</string>
+		</array>
+		<key>Meadows M Geometric Mouse II</key>
+		<array>
+			<string>Geometric Mouse II</string>
+		</array>
+		<key>Meadows M Horse and Rider</key>
+		<array>
+			<string>Horse and Rider, left foot</string>
+		</array>
+		<key>Meadows M Three Piece Reclining Figure</key>
+		<array>
+			<string>Three Piece Reclining Figure, left</string>
+		</array>
+		<key>Meadows M Crouching Woman</key>
+		<array>
+			<string>Crouching Woman</string>
+		</array>
+		<key>Meadows M Figure with Raised Hands</key>
+		<array>
+			<string>Figure with Raised Hands</string>
+		</array>
 		<key>Blanton Building Number</key>
 		<array>
 			<string>Blanton, front</string>
@@ -14,17 +58,21 @@
 		</array>
 		<key>Blanton Fountain</key>
 		<array>
-			<string></string>
+			<string>Blanton, fountain in front</string>
 		</array>
 		<key>Blanton Cooper Centennial Fountain</key>
-		<string>Centennial Quadrangle - Cooper Centennial Fountain</string>
+		<array>
+			<string>Centennial Quadrangle - Cooper Centennial Fountain</string>
+		</array>
 		<key>Blanton Centennial Pavilion</key>
-		<string>Centennial Quadrangle - Centennial Pavillion</string>
+		<array>
+			<string>Centennial Quadrangle - Centennial Pavillion</string>
+		</array>
 		<key>Athletics Doak Walker Plaza</key>
 		<array>
 			<string>Doak Walker Plaza - front of Dedman Rec Center</string>
 		</array>
-		<key>Althetics Peruna</key>
+		<key>Athletics Peruna</key>
 		<array>
 			<string>Peruna Statue - Street View</string>
 		</array>
@@ -120,23 +168,23 @@
 		<array>
 			<string>Cox, Entrance from Blvd</string>
 		</array>
-		<key>Junkins</key>
+		<key>Lyle Junkins</key>
 		<array>
 			<string>Junkins, 1st floor - Quad Entrance</string>
 		</array>
-		<key>Office of Recruitment</key>
+		<key>Lyle Office of Recruitment</key>
 		<array>
 			<string>Embrey, 1st floor - Office of Recruitment</string>
 		</array>
-		<key>Dean&apos;s Suite</key>
+		<key>Lyle Dean&apos;s Suite</key>
 		<array>
 			<string>Embrey, 1st floor - Dean&apos;s Suite</string>
 		</array>
-		<key>Ampitheater</key>
+		<key>Lyle Ampitheater</key>
 		<array>
 			<string>Caruth, back</string>
 		</array>
-		<key>Wall of Patents</key>
+		<key>Lyle Wall of Patents</key>
 		<array>
 			<string>Caruth, 4th floor - Wall of Patents</string>
 		</array>
@@ -144,11 +192,11 @@
 		<array>
 			<string>Caruth, 2nd floor - Viewed from 3rd floor</string>
 		</array>
-		<key>Innovation Gym</key>
+		<key>Lyle Innovation Gym</key>
 		<array>
 			<string>Caruth, 1st floor - Innovation Gym</string>
 		</array>
-		<key>Hunt Institute</key>
+		<key>Lyle Hunt Institute</key>
 		<array>
 			<string>Caruth, 2nd floor - Hunt Institute</string>
 		</array>
@@ -183,12 +231,12 @@
 			<string>Hughes Trigg 1st floor - Cafe 100</string>
 			<string></string>
 		</array>
-		<key>Huges Trigg Commons</key>
+		<key>Hughes Trigg Commons</key>
 		<array>
 			<string>Huges Trigg 1st floor - Commons</string>
 			<string></string>
 		</array>
-		<key>Huges Trigg Basement</key>
+		<key>Hughes Trigg Basement</key>
 		<array>
 			<string>Huges Trigg Basement - Centennial Hall</string>
 			<string></string>
@@ -209,21 +257,6 @@
 			<string></string>
 		</array>
 	</dict>
-	<key>Landmarks-old</key>
-	<dict>
-		<key>Figure with Raised Hands</key>
-		<string>Figure with Raised Hands</string>
-		<key>Crouching Woman</key>
-		<string>Crouching Woman</string>
-		<key>Three Piece Reclining Figure</key>
-		<string>Three Piece Reclining Figure, left</string>
-		<key>Horse and Rider</key>
-		<string>Horse and Rider, left foot</string>
-		<key>Geometric Mouse II</key>
-		<string>Geometric Mouse II</string>
-		<key>Spirit&apos;s Flight</key>
-		<string>Spirit&apos;s Flight</string>
-	</dict>
 	<key>Locations</key>
 	<dict>
 		<key>Perkins School of Theology</key>
@@ -234,8 +267,8 @@
 		</array>
 		<key>Hughes Trigg Student Center</key>
 		<array>
-			<string>Huges Trigg Basement</string>
-			<string>Huges Trigg Commons</string>
+			<string>Hughes Trigg Basement</string>
+			<string>Hughes Trigg Commons</string>
 			<string>Hughes Trigg Cafe 100</string>
 			<string>Hughes Trigg M Lounge</string>
 			<string>Hughes Trigg Mail</string>
@@ -286,7 +319,7 @@
 		</array>
 		<key>Athletics</key>
 		<array>
-			<string>Althetics Peruna</string>
+			<string>Athletics Peruna</string>
 			<string>Athletics Dedman Rec Center</string>
 			<string>Athletics Doak Walker Plaza</string>
 			<string>Athletics Moody Coliseum</string>
@@ -315,7 +348,7 @@
 			<string>Residential Commons Band Hall</string>
 			<string>Residential Commons Blue Light</string>
 			<string>Residential Commons Crow</string>
-			<string>Residential Commons Lloyd</string>
+			<string>Residential Commons Loyd</string>
 		</array>
 	</dict>
 	<key>Server_URL</key>
