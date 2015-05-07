@@ -216,9 +216,9 @@ class PredictLocationHandler(BaseHandler):
 		# predLabel = self.db.locations.find_one({"location_id":int(predLabel_id[0])});
 		# predLabel = predLabel["location"]
 
-		print "predicted label: ", predLabel_id
+		print "predicted label: ", predLabel_id[0][2:-1]
 
-		self.write_json({"label":predLabel_id})
+		self.write_json({"label":predLabel_id[0][2:-1]})
 
 
 
