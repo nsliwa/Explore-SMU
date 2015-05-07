@@ -4,8 +4,118 @@
 <dict>
 	<key>Landmarks</key>
 	<dict>
+		<key>Blanton Building Number</key>
+		<array>
+			<string>Blanton, front</string>
+		</array>
+		<key>Blanton Entrance</key>
+		<array>
+			<string>Blanton, front on top of stairs</string>
+		</array>
+		<key>Blanton Fountain</key>
+		<array>
+			<string></string>
+		</array>
+		<key>Blanton Cooper Centennial Fountain</key>
+		<string>Centennial Quadrangle - Cooper Centennial Fountain</string>
+		<key>Blanton Centennial Pavilion</key>
+		<string>Centennial Quadrangle - Centennial Pavillion</string>
+		<key>Athletics Doak Walker Plaza</key>
+		<array>
+			<string>Doak Walker Plaza - front of Dedman Rec Center</string>
+		</array>
+		<key>Althetics Peruna</key>
+		<array>
+			<string>Peruna Statue - Street View</string>
+		</array>
+		<key>Athletics Moody Coliseum</key>
+		<array>
+			<string>Moody Coliseum - Entrance</string>
+		</array>
+		<key>Athletics Dedman Rec Center</key>
+		<array>
+			<string>Dedman Rec Center - Entrance</string>
+		</array>
+		<key>Athletics Soccer Field</key>
+		<array>
+			<string>Soccer Field, viewed from Dedman Rec Center</string>
+		</array>
+		<key>Dedman</key>
+		<array>
+			<string>Dedman, Entrance of Blvd</string>
+		</array>
+		<key>Dedman Dallas Hall Entrance</key>
+		<array>
+			<string>Dallas Hall Entrance</string>
+		</array>
+		<key>Dedman Dallas Hall Portrait</key>
+		<array>
+			<string>Dallas Hall Lobby</string>
+		</array>
+		<key>Dedman Dallas Hall Seal</key>
+		<array>
+			<string>Dallas Hall Lobby - Seal</string>
+		</array>
+		<key>Meadows</key>
+		<array>
+			<string>Meadows, Entrance from Blvd</string>
+		</array>
+		<key>Meadows Auditorium</key>
+		<array>
+			<string>Meadows Entrance - Auditorium</string>
+		</array>
+		<key>Meadows Creative Computing</key>
+		<array>
+			<string>Meadows, near Hamon Library - Creative Computing Office</string>
+		</array>
+		<key>Meadows Entrance Art</key>
+		<array>
+			<string>Meadows Lobby</string>
+		</array>
+		<key>Meadows Entrance Painting</key>
+		<array>
+			<string>Meadows Lobby</string>
+		</array>
+		<key>Meadows Lounge</key>
+		<array>
+			<string>Meadows Lounge</string>
+		</array>
+		<key>Meadows Painting</key>
+		<array>
+			<string>Meadows - Hall left of Lobby</string>
+		</array>
+		<key>Meadows Tech Effect</key>
+		<array>
+			<string>Meadows - Hall left of Lobby</string>
+		</array>
+		<key>Meadows Library</key>
+		<array>
+			<string>Hamon Library</string>
+		</array>
+		<key>Cox Trade</key>
+		<array>
+			<string>Maguire, Basement</string>
+		</array>
+		<key>Cox Quad Entrance</key>
+		<array>
+			<string>Cox Quad, Bottom of Stairway</string>
+		</array>
+		<key>Cox Quad</key>
+		<array>
+			<string>Cox Quad, Stairway</string>
+		</array>
+		<key>Cox Networking</key>
+		<array>
+			<string>Maguire, Basement</string>
+		</array>
+		<key>Cox Computer Lab</key>
+		<array>
+			<string>Maguire, Basement</string>
+		</array>
 		<key>Cox Alumni</key>
-		<array/>
+		<array>
+			<string>Maguire, Basement</string>
+		</array>
 		<key>Cox</key>
 		<array>
 			<string>Cox, Entrance from Blvd</string>
@@ -101,20 +211,6 @@
 	</dict>
 	<key>Landmarks-old</key>
 	<dict>
-		<key>Lloyd All Sports Center</key>
-		<string>Lloyd All Sports Center - Front Entrance</string>
-		<key>Gerald J. Ford Stadium</key>
-		<string>Gerald J. Ford Stadium - Gate 4 Entrance</string>
-		<key>Dedman Rec Center</key>
-		<string>Dedman Rec Center - Entrance</string>
-		<key>Moody Coliseum</key>
-		<string>Moody Coliseum - Entrance</string>
-		<key>Peruna Statue</key>
-		<string>Peruna Statue - Street View</string>
-		<key>Centennial Pavilion</key>
-		<string>Centennial Quadrangle - Centennial Pavillion</string>
-		<key>Cooper Centennial Fountain</key>
-		<string>Centennial Quadrangle - Cooper Centennial Fountain</string>
 		<key>Figure with Raised Hands</key>
 		<string>Figure with Raised Hands</string>
 		<key>Crouching Woman</key>
