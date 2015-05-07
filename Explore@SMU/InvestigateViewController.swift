@@ -213,8 +213,8 @@ class InvestigateViewController: UIViewController, NSURLSessionTaskDelegate, UII
     
     func uploadPredictImage() {
         // convert UIImage to NSData
-        var downSampledImg = image_predict.image
-//        var downSampledImg = resizeImage(image_predict.image!, newSize: CGSize(width: 100, height: 100))
+//        var downSampledImg = image_predict.image
+        var downSampledImg = resizeImage(image_predict.image!, newSize: CGSize(width: 100, height: 100))
 
         var imageData = UIImagePNGRepresentation(downSampledImg)
         let base64ImageString = imageData.base64EncodedStringWithOptions(.allZeros)
@@ -343,7 +343,7 @@ class InvestigateViewController: UIViewController, NSURLSessionTaskDelegate, UII
             
             if(self.errorCount > 0) {
                 dispatch_async(dispatch_get_main_queue()) {
-                    self.text_progress.text = "Problem connecting to server. Try again later."
+                    self.text_progress.text = "Failed to connect to server."
 //                    self.text_progress.text = NSString(format:"%d Errors Occured", self.errorCount) as String
 //                    self.button_upload.backgroundColor = UIColor.redColor()
                     self.button_upload.imageView?.image = UIImage(named: "camera-red")
