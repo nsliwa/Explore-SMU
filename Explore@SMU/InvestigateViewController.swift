@@ -120,7 +120,7 @@ class InvestigateViewController: UIViewController, NSURLSessionTaskDelegate, UII
     
     
     
-    func askWatson() {
+    func askWatson(question:NSString) {
         
         //TODO:
         // get question for watson based on location
@@ -291,6 +291,7 @@ class InvestigateViewController: UIViewController, NSURLSessionTaskDelegate, UII
 //                                self.text_location.text = labelResponse as String
                                 self.text_progress.text = "You got it!"
                                 
+                                self.askWatson(self.landmarkObject[1] as! NSString)
                                 
                                 let defaults = NSUserDefaults.standardUserDefaults()
                                 

@@ -7,254 +7,307 @@
 		<key>Residential Commons Armstrong</key>
 		<array>
 			<string>Armstrong Commons</string>
+			<string>Who is Umphrey Lee?</string>
 		</array>
 		<key>Residential Commons Band Hall</key>
 		<array>
 			<string>Band Hall</string>
+			<string>What is Mustang Corral?</string>
 		</array>
 		<key>Residential Commons Blue Light</key>
 		<array>
 			<string>Armstrong Commons - Blue Light </string>
+			<string>What is Giddy-Up?</string>
 		</array>
 		<key>Residential Commons Crow</key>
 		<array>
 			<string>Crow Commons</string>
+			<string>What is AARO?</string>
 		</array>
 		<key>Residential Commons Loyd</key>
 		<array>
 			<string>Loyd Commons</string>
+			<string>How do I apply for housing as a first year student?</string>
 		</array>
 		<key>Meadows M Spirit&apos;s Flight</key>
 		<array>
 			<string>Spirit&apos;s Flight</string>
+			<string>How can I get around Dallas without a car?</string>
 		</array>
 		<key>Meadows M Geometric Mouse II</key>
 		<array>
 			<string>Geometric Mouse II</string>
+			<string>Do most students end up rushing a Greek organization?</string>
 		</array>
 		<key>Meadows M Horse and Rider</key>
 		<array>
 			<string>Horse and Rider, left foot</string>
+			<string>How old is Peruna?</string>
 		</array>
 		<key>Meadows M Three Piece Reclining Figure</key>
 		<array>
 			<string>Three Piece Reclining Figure, left</string>
+			<string>What is the Meadows museum?</string>
 		</array>
 		<key>Meadows M Crouching Woman</key>
 		<array>
 			<string>Crouching Woman</string>
+			<string>How many buildings on main campus?</string>
 		</array>
 		<key>Meadows M Figure with Raised Arms</key>
 		<array>
 			<string>Meadows M Figure with Raised Arms</string>
+			<string>What are the different types of student orgs here?</string>
 		</array>
 		<key>Blanton Building Number</key>
 		<array>
 			<string>Blanton, front</string>
+			<string>What types of study abroad programs does SMU offer?</string>
 		</array>
 		<key>Blanton Entrance</key>
 		<array>
 			<string>Blanton, front on top of stairs</string>
+			<string>Does SMU offer scholarships?</string>
 		</array>
 		<key>Blanton Fountain</key>
 		<array>
 			<string>Blanton, fountain in front</string>
+			<string>How do I apply for financial aid?</string>
 		</array>
 		<key>Blanton Cooper Centennial Fountain</key>
 		<array>
 			<string>Centennial Quadrangle - Cooper Centennial Fountain</string>
+			<string>What is the Cooper Centennial Fountain?</string>
 		</array>
 		<key>Blanton Centennial Pavilion</key>
 		<array>
 			<string>Centennial Quadrangle - Centennial Pavillion</string>
+			<string>Who was the first president of SMU?</string>
 		</array>
 		<key>Athletics Doak Walker Plaza</key>
 		<array>
 			<string>Doak Walker Plaza - front of Dedman Rec Center</string>
+			<string>What football division does SMU play in?</string>
 		</array>
 		<key>Athletics Peruna</key>
 		<array>
 			<string>Peruna Statue - Street View</string>
+			<string>What is Peruna?</string>
 		</array>
 		<key>Athletics Moody Coliseum</key>
 		<array>
 			<string>Moody Coliseum - Entrance</string>
+			<string>Who is SMU&apos;s rival?</string>
 		</array>
 		<key>Athletics Dedman Rec Center</key>
 		<array>
 			<string>Dedman Rec Center - Entrance</string>
+			<string>What is the A-LEC?</string>
 		</array>
 		<key>Athletics Soccer Field</key>
 		<array>
 			<string>Soccer Field, viewed from Dedman Rec Center</string>
+			<string>What is boulevarding?</string>
 		</array>
 		<key>Dedman</key>
 		<array>
 			<string>Dedman, Entrance of Blvd</string>
+			<string>What academic programs does Dedman offer?</string>
 		</array>
 		<key>Dedman Dallas Hall Entrance</key>
 		<array>
 			<string>Dallas Hall Entrance</string>
+			<string>What innovative offers does Dedman have?</string>
 		</array>
 		<key>Dedman Dallas Hall Portrait</key>
 		<array>
 			<string>Dallas Hall Lobby</string>
+			<string>How much research has Dedman contributed?</string>
 		</array>
 		<key>Dedman Dallas Hall Seal</key>
 		<array>
 			<string>Dallas Hall Lobby - Seal</string>
+			<string>What is the Rotunda Passage?</string>
 		</array>
 		<key>Meadows</key>
 		<array>
 			<string>Meadows, Entrance from Blvd</string>
+			<string>What is the Meadows School of the Arts&apos; rank?</string>
 		</array>
 		<key>Meadows Auditorium</key>
 		<array>
 			<string>Meadows Entrance - Auditorium</string>
+			<string>What can I do to have fun outside of SMU in Dallas?</string>
 		</array>
 		<key>Meadows Creative Computing</key>
 		<array>
 			<string>Meadows, near Hamon Library - Creative Computing Office</string>
+			<string>How many dorms are there?</string>
 		</array>
 		<key>Meadows Entrance Art</key>
 		<array>
 			<string>Meadows Lobby</string>
+			<string></string>
 		</array>
 		<key>Meadows Entrance Painting</key>
 		<array>
 			<string>Meadows Lobby</string>
+			<string>What is service learning?</string>
 		</array>
 		<key>Meadows Lounge</key>
 		<array>
 			<string>Meadows Lounge</string>
+			<string>How many schools are there at SMU?</string>
 		</array>
 		<key>Meadows Painting</key>
 		<array>
 			<string>Meadows - Hall left of Lobby</string>
+			<string>What is the oldest building on campus?</string>
 		</array>
 		<key>Meadows Tech Effect</key>
 		<array>
 			<string>Meadows - Hall left of Lobby</string>
+			<string>How many fountains are there?</string>
 		</array>
 		<key>Meadows Library</key>
 		<array>
 			<string>Hamon Library</string>
+			<string>What is in the Hamon Arts Library?</string>
 		</array>
 		<key>Cox Trade</key>
 		<array>
 			<string>Maguire, Basement</string>
+			<string>Are SMU students friendly?</string>
 		</array>
 		<key>Cox Quad Entrance</key>
 		<array>
 			<string>Cox Quad, Bottom of Stairway</string>
+			<string>What is the Emerging Leaders Program?</string>
 		</array>
 		<key>Cox Quad</key>
 		<array>
 			<string>Cox Quad, Stairway</string>
+			<string>What is the Tate Lecture Series?</string>
 		</array>
 		<key>Cox Networking</key>
 		<array>
 			<string>Maguire, Basement</string>
+			<string>How many majors/minors are offered?</string>
 		</array>
 		<key>Cox Computer Lab</key>
 		<array>
 			<string>Maguire, Basement</string>
+			<string>How many libraries are there?</string>
 		</array>
 		<key>Cox Alumni</key>
 		<array>
 			<string>Maguire, Basement</string>
+			<string>When was the Cox School of Business founded?</string>
 		</array>
 		<key>Cox</key>
 		<array>
 			<string>Cox, Entrance from Blvd</string>
+			<string>What is the Cox School of Business&apos; rank?</string>
 		</array>
 		<key>Lyle Junkins</key>
 		<array>
 			<string>Junkins, 1st floor - Quad Entrance</string>
+			<string>How good are the Lyle facilities?</string>
 		</array>
 		<key>Lyle Office of Recruitment</key>
 		<array>
 			<string>Embrey, 1st floor - Office of Recruitment</string>
+			<string>When was the Lyle School of Engineering founded?</string>
 		</array>
 		<key>Lyle Dean&apos;s Suite</key>
 		<array>
 			<string>Embrey, 1st floor - Dean&apos;s Suite</string>
+			<string>How good is the engineering school at SMU?</string>
 		</array>
 		<key>Lyle Ampitheater</key>
 		<array>
 			<string>Caruth, back</string>
+			<string>What types of engineering majors are offered at SMU?</string>
 		</array>
 		<key>Lyle Wall of Patents</key>
 		<array>
 			<string>Caruth, 4th floor - Wall of Patents</string>
+			<string>How much research has Lyle faculty done?</string>
 		</array>
 		<key>Lyle Seal</key>
 		<array>
 			<string>Caruth, 2nd floor - Viewed from 3rd floor</string>
+			<string>What is the Hart Center for Engineering Leadership?</string>
 		</array>
 		<key>Lyle Innovation Gym</key>
 		<array>
 			<string>Caruth, 1st floor - Innovation Gym</string>
+			<string>What is the Deason Innovation Gym?</string>
 		</array>
 		<key>Lyle Hunt Institute</key>
 		<array>
 			<string>Caruth, 2nd floor - Hunt Institute</string>
+			<string>What is the Hunt Institute for Engineering and Humanity?</string>
 		</array>
 		<key>Lyle</key>
 		<array>
 			<string>Caruth, front</string>
+			<string>What is the Caruth Institute for Engineering Education?</string>
 		</array>
 		<key>Hughes Trigg SMU Unbridled</key>
 		<array>
 			<string>Hughes Trigg Basement - SMU Unbridled</string>
+			<string>What majors/minors are offered at SMU?</string>
 		</array>
 		<key>Hughes Trigg Peruna Statue</key>
 		<array>
 			<string>Hughes Trigg 1st floor - Peruna Statue</string>
+			<string>Is our mascot Peruna or a mustang?</string>
 		</array>
 		<key>Hughes Trigg Mane Course</key>
 		<array>
 			<string>Hughes Trigg 1st floor - Stair leading to Mane Course</string>
+			<string>Where can I eat on campus?</string>
 		</array>
 		<key>Hughes Trigg Mail</key>
 		<array>
 			<string>Hughes Trigg 1st floor - Post Office</string>
-			<string></string>
+			<string>What is Guildhall?</string>
 		</array>
 		<key>Hughes Trigg M Lounge</key>
 		<array>
 			<string>Hughes Trigg 1st floor - M Lounge</string>
-			<string></string>
+			<string>What is Taos?</string>
 		</array>
 		<key>Hughes Trigg Cafe 100</key>
 		<array>
 			<string>Hughes Trigg 1st floor - Cafe 100</string>
-			<string></string>
+			<string>Where can I meet more people in campus?</string>
 		</array>
 		<key>Hughes Trigg Commons</key>
 		<array>
 			<string>Huges Trigg 1st floor - Commons</string>
-			<string></string>
+			<string>What is the Hegi Career Center?</string>
 		</array>
 		<key>Huges Trigg Basement</key>
 		<array>
 			<string>Huges Trigg Basement - Centennial Hall</string>
-			<string></string>
+			<string>How many organizations are at SMU?</string>
 		</array>
 		<key>Perkins Library Entrance</key>
 		<array>
 			<string>Bridwell Library, entrance</string>
-			<string></string>
+			<string>What is in the Bridwell Library?</string>
 		</array>
 		<key>Perkins Chapel Garden</key>
 		<array>
 			<string>Perkins Chapel, near front entrance</string>
-			<string></string>
+			<string>What specialized programs does Perkins offer?</string>
 		</array>
 		<key>Perkins Chapel</key>
 		<array>
 			<string>Perkins Chapel, near front entrance</string>
-			<string></string>
+			<string>What academic programs does Perkins offer?</string>
 		</array>
 	</dict>
 	<key>Locations</key>
