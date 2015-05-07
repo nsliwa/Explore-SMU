@@ -58,10 +58,10 @@ for loc in db.locations.find():
 		# decode current img from base64
 		# convert to np array
 		img = Image.open(BytesIO(base64.b64decode(feature_data)))
-		# downsample
-		width = 100
-		height = 100
-		img = img.resize((width, height), Image.ANTIALIAS)
+		# # downsample
+		# width = 100
+		# height = 100
+		# img = img.resize((width, height), Image.ANTIALIAS)
 		img = np.array(img)
 
 		# convert img to grayscale
