@@ -96,7 +96,7 @@
         
         //Get the question from the UI
         NSString* question = self.questionTextField.text;
-
+        
         //Send an asynchronous network request to the watson API
         [[WPWatson sharedManager] askQuestion:question completionHandler:^(NSError *connectionError) {
                         

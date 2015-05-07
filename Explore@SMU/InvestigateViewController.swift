@@ -126,6 +126,7 @@ class InvestigateViewController: UIViewController, NSURLSessionTaskDelegate, UII
         // get question for watson based on location
         // API call
         // populate info
+        NSLog("Asked a question")
     }
     
     

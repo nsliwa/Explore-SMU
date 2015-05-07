@@ -51,6 +51,8 @@
     // Return the number of rows in the section.
     WPWatson* watson = [WPWatson sharedManager];
     WPWatsonQuestionResponse* response = watson.responses[watson.currentQuestion];
+    NSLog(@"Question: %@", watson.currentQuestion);
+    NSLog(@"Response: %@", response.answers[0][KEY_TEXT]);
     return response.answers.count;
 }
 
