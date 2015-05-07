@@ -213,7 +213,8 @@ class InvestigateViewController: UIViewController, NSURLSessionTaskDelegate, UII
     
     func uploadPredictImage() {
         // convert UIImage to NSData
-        var downSampledImg = resizeImage(image_predict.image!, newSize: CGSize(width: 100, height: 100))
+        var downSampledImg = image_predict.image
+//        var downSampledImg = resizeImage(image_predict.image!, newSize: CGSize(width: 100, height: 100))
 
         var imageData = UIImagePNGRepresentation(downSampledImg)
         let base64ImageString = imageData.base64EncodedStringWithOptions(.allZeros)

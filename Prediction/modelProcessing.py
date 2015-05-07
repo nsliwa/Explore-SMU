@@ -85,7 +85,8 @@ for loc in db.locations.find():
 		# process label data
 		# pull out label
 		label = a["label"]
-		labels.append(landmarks.index(label));
+		# labels.append(landmarks.index(label));
+		labels.append(label)
 
 		# print "label:", label, "index:", landmarks.index(label), "shape:", np.shape(gray), np.shape(fvals)
 
