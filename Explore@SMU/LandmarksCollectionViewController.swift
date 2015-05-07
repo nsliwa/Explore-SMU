@@ -15,6 +15,7 @@ class LandmarksCollectionViewController: UICollectionViewController {
     var location: String = ""
     var locationDict = NSMutableDictionary()
     var landmarksArray = NSMutableArray()
+    var foundLandmarks = Array(["" as String])
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +39,20 @@ class LandmarksCollectionViewController: UICollectionViewController {
             locationDict = NSMutableDictionary(dictionary: locations)
             landmarksArray = NSMutableArray(array: locationDict[location] as! NSArray)
         }
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        if let found: Array = defaults.arrayForKey("FoundLandmarks") {
+            for obj in found {
+                foundLandmarks.append(obj as! String)
+            }
+        }
+        
+        NSLog("View appeared!")
+//        collectionView?.reloadData()
     }
 
     /*
@@ -69,6 +84,15 @@ class LandmarksCollectionViewController: UICollectionViewController {
 //        let landmarkCell = cell as! LandmarkCollectionViewCell
         var str: String = landmarksArray[indexPath.row] as! String
         NSLog(str)
+        
+        var bob = Array(["bob"])
+        if( contains(bob, "bob") ) {
+            
+        }
+        if( contains(foundLandmarks, str)) {
+            cell.landmarkImage.layer.borderColor = UIColor.greenColor().CGColor
+            cell.landmarkImage.layer.borderWidth = 5
+        }
         
         if let img: UIImage = UIImage(named: str) {
             cell.landmarkImage?.image = img

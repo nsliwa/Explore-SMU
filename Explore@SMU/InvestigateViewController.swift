@@ -222,8 +222,9 @@ class InvestigateViewController: UIViewController, NSURLSessionTaskDelegate, UII
         
         // update text label with progress
         // update button background color with progress
-        button_upload.backgroundColor = UIColor.blueColor()
-        self.text_progress.text = "Submitting Answer"
+//        button_upload.backgroundColor = UIColor.blueColor()
+        button_upload.imageView?.image = UIImage(named: "camera-blue")
+        self.text_progress.text = "Checking Your Answer"
         
         // API call
         predictFeature(data)
@@ -281,11 +282,39 @@ class InvestigateViewController: UIViewController, NSURLSessionTaskDelegate, UII
                 if let responseData: NSDictionary = NSJSONSerialization.JSONObjectWithData(d, options: NSJSONReadingOptions.MutableContainers, error: nil) as? NSDictionary {
                     
                     if let labelResponse: NSString = responseData["label"] as? NSString {
-                        
-                        dispatch_async(dispatch_get_main_queue()) {
-                            self.button_upload.backgroundColor = UIColor.greenColor()
-                            self.text_location.text = labelResponse as String
-                            self.text_progress.text = "Successful Response"
+                        if(labelResponse == self.landmarkName) {
+                            dispatch_async(dispatch_get_main_queue()) {
+                                self.button_upload.imageView?.image = UIImage(named: "camera-green")
+//                                self.button_upload.backgroundColor = UIColor.greenColor()
+//                                self.text_location.text = labelResponse as String
+                                self.text_progress.text = "You got it!"
+                                
+                                
+                                let defaults = NSUserDefaults.standardUserDefaults()
+                                
+                                if let discovered = defaults.arrayForKey("FoundLandmarks") {
+                                    var allDiscovered = NSMutableSet(array: discovered)
+                                    allDiscovered.addObject(self.landmarkName)
+                                    
+                                    for obj in allDiscovered {
+                                        NSLog(obj as! String)
+                                    }
+                                    
+                                    var discoveredArray = allDiscovered.allObjects as NSArray
+                                    
+                                    defaults.setObject(discoveredArray, forKey: "FoundLandmarks")
+                                    
+                                    defaults.synchronize()
+                                }
+                            }
+                        }
+                        else {
+                            dispatch_async(dispatch_get_main_queue()) {
+                                self.button_upload.imageView?.image = UIImage(named: "camera-red")
+//                                self.button_upload.backgroundColor = UIColor.redColor()
+//                                self.text_location.text = labelResponse as String
+                                self.text_progress.text = "Sorry! Please try again."
+                            }
                         }
                         
                     }
@@ -310,18 +339,20 @@ class InvestigateViewController: UIViewController, NSURLSessionTaskDelegate, UII
             
             if(self.errorCount > 0) {
                 dispatch_async(dispatch_get_main_queue()) {
-                    self.text_progress.text = NSString(format:"%d Errors Occured", self.errorCount) as String
-                    self.button_upload.backgroundColor = UIColor.redColor()
+                    self.text_progress.text = "Problem connecting to server. Try again later."
+//                    self.text_progress.text = NSString(format:"%d Errors Occured", self.errorCount) as String
+//                    self.button_upload.backgroundColor = UIColor.redColor()
+                    self.button_upload.imageView?.image = UIImage(named: "camera-red")
                     
                     NSLog(self.errorMsgs)
                 }
             }
-            else {
-                dispatch_async(dispatch_get_main_queue()) {
-                    self.text_progress.text = "Prediction Upload Successful"
-                    self.button_upload.backgroundColor = UIColor.greenColor()
-                }
-            }
+//            else {
+//                dispatch_async(dispatch_get_main_queue()) {
+//                    self.text_progress.text = "Prediction Upload Successful"
+//                    self.button_upload.backgroundColor = UIColor.greenColor()
+//                }
+//            }
             
             dispatch_async(dispatch_get_main_queue()) {
                 // enable buttons after processing
