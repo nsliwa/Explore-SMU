@@ -17,7 +17,7 @@ os.makedirs(root)
 
 
 
-location = [
+locations = [
 
 	["Athletics", ["Athletics Dedman Rec Center", "Athletics Doak Walker Plaza", "Athletics Moody Coliseum", "Athletics Peruna", "Athletics Soccer Field"]],
 	["Blanton Student Servies", ["Blanton Building Number", "Blanton Centennial Pavilion", "Blanton Cooper Centennial Fountain", "Blanton Entrance", "Blanton Fountain"]],
