@@ -22,7 +22,7 @@ locations = [
 	["Blanton Student Services", ["Blanton Building Number", "Blanton Centennial Pavilion", "Blanton Cooper Centennial Fountain", "Blanton Entrance", "Blanton Fountain"]],
 	["Cox School of Business", ["Cox", "Cox Alumni", "Cox Computer Lab", "Cox Networking", "Cox Quad", "Cox Quad Entrance", "Cox Trade"]],
 	["Dedman School of Humanities", ["Dedman", "Dedman Dallas Hall Entrance", "Dedman Dallas Hall Portrait", "Dedman Dallas Hall Seal"]],
-	["Hughes Trigg Student Center", ["Hughes Trigg Basement", "Huges Trigg Commons", "Hughes Trigg Cafe 100", "Hughes Trigg M Lounge", "Hughes Trigg Mail", "Hughes Trigg Mane Course", "Hughes Trigg Peruna Statue", "Hughes Trigg SMU Unbridled"]],
+	["Hughes Trigg Student Center", ["Huges Trigg Basement", "Huges Trigg Commons", "Hughes Trigg Cafe 100", "Hughes Trigg M Lounge", "Hughes Trigg Mail", "Hughes Trigg Mane Course", "Hughes Trigg Peruna Statue", "Hughes Trigg SMU Unbridled"]],
 	["Lyle School of Engineering", ["Lyle", "Lyle Ampitheater", "Lyle Dean's Suite", "Lyle Hunt Institute", "Lyle Innovation Gym", "Lyle Junkins", "Lyle Office of Recruitment", "Lyle Seal", "Lyle Wall of Patents"]],
 	["Meadows School of Arts", ["Meadows", "Meadows Auditorium", "Meadows Creative Computing", "Meadows Entrance Art", "Meadows Entrance Painting", "Meadows Library", "Meadows Lounge", "Meadows Painting", "Meadows Tech Effect"]], 
 	["Meadows Museum", ["Meadows M Crouching Woman", "Meadows M Figure with Raised Arms", "Meadows M Geometric Mouse II", "Meadows M Horse and Rider", "Meadows M Spirit's Flight", "Meadows M Three Piece Reclining Figure"]],
