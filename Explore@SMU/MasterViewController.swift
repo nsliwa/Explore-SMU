@@ -14,6 +14,18 @@ class MasterViewController: UITabBarController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        var defaultDict: NSDictionary?
+        if let path = NSBundle.mainBundle().pathForResource("ScavengerHunt", ofType: "plist") {
+            defaultDict = NSDictionary(contentsOfFile: path)
+        }
+        if let dict = defaultDict {
+            NSUserDefaults.standardUserDefaults().registerDefaults(dict as [NSObject : AnyObject])
+            NSLog("registering defaults")
+        }
+        else {
+            NSLog("can't register defaults")
+        }
     }
     
 

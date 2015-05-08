@@ -10,12 +10,22 @@ import UIKit
 
 let reuseIdentifier = "landmarkCell"
 
-class LandmarksCollectionViewController: UICollectionViewController {
+
+
+class LandmarksCollectionViewController: UICollectionViewController, NSURLSessionTaskDelegate {
 
     var location: String = ""
     var locationDict = NSMutableDictionary()
     var landmarksArray = NSMutableArray()
     var foundLandmarks = Array(["" as String])
+    
+    // session config
+    //    let SERVER_URL: NSString = "http://guests-mac-mini-2.local:8000"
+    //    var SERVER_URL: NSString = "http://nicoles-macbook-pro.local:8000"
+    var SERVER_URL: NSString = "http://teamben.cloudapp.net:8000"
+    let UPDATE_INTERVAL = 1/10.0
+    
+    var session: NSURLSession! = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,11 +44,20 @@ class LandmarksCollectionViewController: UICollectionViewController {
 
         // Do any additional setup after loading the view.
         
-        let defaults = NSUserDefaults.standardUserDefaults()
-        if let locations :NSDictionary = defaults.dictionaryForKey("Locations") {
-            locationDict = NSMutableDictionary(dictionary: locations)
-            landmarksArray = NSMutableArray(array: locationDict[location] as! NSArray)
-        }
+//        let defaults = NSUserDefaults.standardUserDefaults()
+//        if let locations :NSDictionary = defaults.dictionaryForKey("Locations") {
+//            locationDict = NSMutableDictionary(dictionary: locations)
+//            landmarksArray = NSMutableArray(array: locationDict[location] as! NSArray)
+//        }
+        
+        //setup NSURLSession delegation (ephemeral)
+        let sessionConfig: NSURLSessionConfiguration = NSURLSessionConfiguration.ephemeralSessionConfiguration()
+        
+        sessionConfig.timeoutIntervalForRequest = 5.0;
+        sessionConfig.timeoutIntervalForResource = 8.0;
+        sessionConfig.HTTPMaximumConnectionsPerHost = 1;
+        
+        session = NSURLSession(configuration: sessionConfig, delegate: self, delegateQueue: nil)
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -50,6 +69,8 @@ class LandmarksCollectionViewController: UICollectionViewController {
                 foundLandmarks.append(obj as! String)
             }
         }
+        
+        getLandmarks()
         
         NSLog("View appeared!")
 //        collectionView?.reloadData()
@@ -145,5 +166,69 @@ class LandmarksCollectionViewController: UICollectionViewController {
     
     }
     */
+    
+    
+    func getLandmarks() {
+        // setup the url
+        var rawbaseURL: NSString = NSString(format: "%@/GetLandmarks?dsid=%@",SERVER_URL, location)
+        let baseURL = rawbaseURL.stringByReplacingOccurrencesOfString(" ", withString: "%20")
+//        let baseURL = rawbaseURL.stringByReplacingOccurrencesOfString(" ", withString: "%20", options: NSStringCompareOptions.LiteralSearch, range: nil)
+        
+        NSLog("base url:%@ ", baseURL)
+        
+        var postURL: NSURL = NSURL(string: baseURL as String)!
+        
+        // data to send in body of post request (send arguments as json)
+        var error: NSError?
+        
+        // create a custom HTTP POST request
+        var request: NSMutableURLRequest = NSMutableURLRequest(URL: postURL)
+        
+        request.HTTPMethod = "GET"
+        
+        NSLog("about to get landmarks")
+        
+        // start the request, print the responses etc.
+        let postTrack: NSURLSessionDataTask = session.dataTaskWithRequest(request, completionHandler: { ( data:NSData!, response:NSURLResponse!, err:NSError! ) -> Void in
+            if(err == nil) {
+                NSLog("response: %@", response)
+                NSLog("data: %@",  NSString(data: data, encoding: NSUTF8StringEncoding)!)
+                
+                if let responseData: NSDictionary = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as? NSDictionary {
+                    
+                    if let results: NSArray = (responseData.valueForKey("landmarks") as? NSArray) {
+                        
+                        dispatch_async(dispatch_get_main_queue()) {
+                            self.landmarksArray.removeAllObjects()
+                            self.landmarksArray.addObjectsFromArray(results as [AnyObject])
+                            
+                            NSLog("got locations!")
+                            
+                            self.collectionView?.reloadData()
+                            
+                        }
+                        
+                    }
+                    else {
+                        
+                    }
+                }
+                    
+                    
+                else {
+                    
+                }
+                
+            }
+                
+            else {
+            }
+            
+        })
+        
+        postTrack.resume()
+        
+    }
+
 
 }

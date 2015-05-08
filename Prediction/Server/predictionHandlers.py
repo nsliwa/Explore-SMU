@@ -55,7 +55,7 @@ class GetLandmarksHandler(BaseHandler):
 		'''GetLandmarks
 		'''
 
-		dsid = self.get_argument("dsid", default="Testing", strip=True)
+		dsid = self.get_argument("dsid", default="Blanton Student Services", strip=True)
 
 		print "dsid:", dsid
 
