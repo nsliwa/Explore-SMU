@@ -83,8 +83,6 @@
 {
     //Check for the right segue
     
-    NSLog(segue.identifier);
-    NSLog(SEGUE_SHOW_RESULTS_DETAILS);
 //    if ([segue.identifier isEqualToString:SEGUE_SHOW_RESULTS_DETAILS]) {
 
         //Build a loading animation

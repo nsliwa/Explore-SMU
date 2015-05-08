@@ -28,8 +28,7 @@
 
 @property (nonatomic) int row;
 
-@property (weak, nonatomic) IBOutlet UILabel *confidenceLabel;
+@property (weak, nonatomic) IBOutlet UITextView *questionTextBox;
 @property (weak, nonatomic) IBOutlet UITextView *answerTextBox;
-@property (weak, nonatomic) IBOutlet UITextView *evidenceTextBox;
 
 @end

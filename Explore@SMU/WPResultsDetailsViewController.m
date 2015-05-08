@@ -73,7 +73,8 @@
     WPWatson* watson = [WPWatson sharedManager];
     WPWatsonQuestionResponse* response = watson.responses[watson.currentQuestion];
     
-    self.evidenceTextBox.text = response.evidence[0][KEY_TEXT];
+    self.answerTextBox.text = response.evidence[0][KEY_TEXT];
+    self.questionTextBox.text = watson.currentQuestion;
 }
 
 @end

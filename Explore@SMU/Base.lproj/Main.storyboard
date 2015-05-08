@@ -319,20 +319,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confidence:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tQ-jA-tH7">
-                                <rect key="frame" x="25" y="85" width="93" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="93" id="hlj-9i-wwU"/>
-                                </constraints>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Question:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66o-v7-LfR">
+                                <rect key="frame" x="25" y="114" width="74" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.35301291369999999" green="0.48285397429999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVJ-Or-y4X">
-                                <rect key="frame" x="126" y="85" width="179" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Answer:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9QU-zV-sSn">
+                                <rect key="frame" x="25" y="258" width="62" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.35301291369999999" green="0.48285397429999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Answer text." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FxA-i9-C4u">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" text="Answer text." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXF-yc-04w">
+                                <rect key="frame" x="25" y="287" width="286" height="172"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" text="Question text." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FxA-i9-C4u">
                                 <rect key="frame" x="25" y="143" width="280" height="107"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -341,48 +346,23 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66o-v7-LfR">
-                                <rect key="frame" x="25" y="114" width="62" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best Evidence:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9QU-zV-sSn">
-                                <rect key="frame" x="25" y="258" width="115" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" text="Evidence text." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXF-yc-04w">
-                                <rect key="frame" x="25" y="287" width="286" height="172"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.59341461490000003" green="0.0046206512939999996" blue="0.046413699439999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="gXF-yc-04w" secondAttribute="trailing" constant="-7" id="3qL-TZ-iEz"/>
-                            <constraint firstItem="FxA-i9-C4u" firstAttribute="trailing" secondItem="yVJ-Or-y4X" secondAttribute="trailing" id="4aF-eL-3OY"/>
                             <constraint firstItem="FxA-i9-C4u" firstAttribute="leading" secondItem="9QU-zV-sSn" secondAttribute="leading" id="8hP-37-pSW"/>
                             <constraint firstItem="9QU-zV-sSn" firstAttribute="leading" secondItem="gXF-yc-04w" secondAttribute="leading" id="ABH-8D-uG8"/>
                             <constraint firstItem="FxA-i9-C4u" firstAttribute="leading" secondItem="66o-v7-LfR" secondAttribute="leading" id="Bvi-JR-XAN"/>
                             <constraint firstItem="gXF-yc-04w" firstAttribute="top" secondItem="9QU-zV-sSn" secondAttribute="bottom" constant="8" symbolic="YES" id="DFe-Gl-Dcf"/>
                             <constraint firstItem="9QU-zV-sSn" firstAttribute="top" secondItem="FxA-i9-C4u" secondAttribute="bottom" constant="8" symbolic="YES" id="Ipa-QJ-AHg"/>
-                            <constraint firstItem="2tQ-jA-tH7" firstAttribute="baseline" secondItem="yVJ-Or-y4X" secondAttribute="baseline" id="KHL-QC-aPm"/>
                             <constraint firstItem="PNj-tK-qRd" firstAttribute="top" secondItem="gXF-yc-04w" secondAttribute="bottom" constant="109" id="Mmg-18-Hfr"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="yVJ-Or-y4X" secondAttribute="trailing" constant="-1" id="NUF-Ml-7Ec"/>
-                            <constraint firstItem="yVJ-Or-y4X" firstAttribute="leading" secondItem="2tQ-jA-tH7" secondAttribute="trailing" constant="8" symbolic="YES" id="V2G-Da-owd"/>
-                            <constraint firstItem="2tQ-jA-tH7" firstAttribute="top" secondItem="v81-fl-heR" secondAttribute="bottom" constant="21" id="dof-zY-MiR"/>
-                            <constraint firstItem="66o-v7-LfR" firstAttribute="top" secondItem="2tQ-jA-tH7" secondAttribute="bottom" constant="8" symbolic="YES" id="fXo-to-Oc7"/>
-                            <constraint firstItem="2tQ-jA-tH7" firstAttribute="leading" secondItem="66o-v7-LfR" secondAttribute="leading" id="gMb-Iu-h40"/>
-                            <constraint firstItem="2tQ-jA-tH7" firstAttribute="leading" secondItem="ScO-dw-WB0" secondAttribute="leadingMargin" constant="9" id="j2U-pM-RbK"/>
                             <constraint firstItem="FxA-i9-C4u" firstAttribute="top" secondItem="66o-v7-LfR" secondAttribute="bottom" constant="8" symbolic="YES" id="vTT-CY-KBH"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Answer Details" id="xa0-wh-oeN"/>
                     <connections>
-                        <outlet property="answerTextBox" destination="FxA-i9-C4u" id="gvd-bL-QC7"/>
-                        <outlet property="confidenceLabel" destination="yVJ-Or-y4X" id="jIF-nk-lTJ"/>
-                        <outlet property="evidenceTextBox" destination="gXF-yc-04w" id="vNa-6a-7X5"/>
+                        <outlet property="answerTextBox" destination="gXF-yc-04w" id="khv-bP-GMT"/>
+                        <outlet property="questionTextBox" destination="FxA-i9-C4u" id="WOa-rs-yT5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nAe-7c-eAf" userLabel="First Responder" sceneMemberID="firstResponder"/>
