@@ -18,10 +18,15 @@ class ExploreViewController: UIViewController, MKMapViewDelegate {
         super.viewDidLoad()
 //        self.tabBarItem = UITabBarItem(title: "Explore!", image: nil, tag: 1)
         self.mapView.showsUserLocation = true
+        self.mapView.setUserTrackingMode(MKUserTrackingMode.FollowWithHeading, animated: true)
         
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    func mapView(mapView: MKMapView!, didUpdateUserLocation
+        userLocation: MKUserLocation!) {
+            mapView.centerCoordinate = userLocation.location.coordinate
+    }
+    
 }
 

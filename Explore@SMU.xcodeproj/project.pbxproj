@@ -34,6 +34,8 @@
 		EF941FC01AEFF1E0001C1332 /* Explore_SMUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF941FBF1AEFF1E0001C1332 /* Explore_SMUTests.swift */; };
 		EF941FCA1AEFF2A9001C1332 /* InvestigateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF941FC91AEFF2A9001C1332 /* InvestigateViewController.swift */; };
 		EF941FCC1AEFF2BD001C1332 /* AskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF941FCB1AEFF2BD001C1332 /* AskViewController.swift */; };
+		EFAEC3461AFC0FAE0048D6E6 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAEC3451AFC0FAE0048D6E6 /* JSON.swift */; };
+		EFAEC34E1AFC1B260048D6E6 /* SMUPlaces.json in Resources */ = {isa = PBXBuildFile; fileRef = EFAEC34D1AFC1B260048D6E6 /* SMUPlaces.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +90,8 @@
 		EF941FBF1AEFF1E0001C1332 /* Explore_SMUTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Explore_SMUTests.swift; sourceTree = "<group>"; };
 		EF941FC91AEFF2A9001C1332 /* InvestigateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestigateViewController.swift; sourceTree = "<group>"; };
 		EF941FCB1AEFF2BD001C1332 /* AskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AskViewController.swift; sourceTree = "<group>"; };
+		EFAEC3451AFC0FAE0048D6E6 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		EFAEC34D1AFC1B260048D6E6 /* SMUPlaces.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SMUPlaces.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +187,8 @@
 		EF941FA51AEFF1DF001C1332 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EFAEC34D1AFC1B260048D6E6 /* SMUPlaces.json */,
+				EFAEC3451AFC0FAE0048D6E6 /* JSON.swift */,
 				CE1DAD431AFA52EE00BEC433 /* Place.swift */,
 				ADDD51A01AF8186300D46E54 /* config.plist */,
 				AD388F1A1AF9619900B78492 /* AppInfo.plist */,
@@ -302,6 +308,7 @@
 				AD388F121AF8911100B78492 /* ScavengerHunt.plist in Resources */,
 				ADDD51A41AF8186300D46E54 /* fake.json in Resources */,
 				EF941FB41AEFF1E0001C1332 /* LaunchScreen.xib in Resources */,
+				EFAEC34E1AFC1B260048D6E6 /* SMUPlaces.json in Resources */,
 				ADEF88711AFAA89700610045 /* OverlayView.xib in Resources */,
 				EF941FB11AEFF1E0001C1332 /* Images.xcassets in Resources */,
 				AD388F1B1AF9619900B78492 /* AppInfo.plist in Resources */,
@@ -325,6 +332,7 @@
 				ADDD51BB1AF818C700D46E54 /* WPWatson.m in Sources */,
 				EF941FAC1AEFF1DF001C1332 /* SearchViewController.swift in Sources */,
 				ADDD51BA1AF818C700D46E54 /* WPUtils.m in Sources */,
+				EFAEC3461AFC0FAE0048D6E6 /* JSON.swift in Sources */,
 				EF941FA81AEFF1DF001C1332 /* AppDelegate.swift in Sources */,
 				ADDD519D1AF7F35600D46E54 /* MasterViewController.swift in Sources */,
 				ADDD51BC1AF818C700D46E54 /* WPWatsonQuestionResponse.m in Sources */,

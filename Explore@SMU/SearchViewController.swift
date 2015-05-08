@@ -12,6 +12,7 @@ import MapKit
 class SearchViewController: UIViewController {
 
     let regionRadius: CLLocationDistance = 1000
+    var places = [Place]()
     
     @IBOutlet weak var mapView: MKMapView!
     
@@ -24,13 +25,18 @@ class SearchViewController: UIViewController {
         
         let initialLocation = CLLocation(latitude: 32.8441, longitude: -96.7849)
         
+        self.mapView.showsUserLocation = true
+        self.mapView.setUserTrackingMode(MKUserTrackingMode.FollowWithHeading, animated: true)
         
         self.centerMapOnLocation(initialLocation)
         
-        let meadowsMuseum = Place(title: "Meadows Museum", locationName: "South", coordinate: CLLocationCoordinate2D(latitude: 32.8384, longitude: -96.7843))
+        //let meadowsMuseum = Place(title: "Meadows Museum", area: "By the boulevard", coordinate: CLLocationCoordinate2D(latitude: 32.8384, longitude: -96.7843))
         
-        mapView.addAnnotation(meadowsMuseum)
-        // Do any additional setup after loading the view, typically from a nib.
+        //mapView.addAnnotation(meadowsMuseum)
+        
+        loadInitialData()
+        mapView.addAnnotations(places)
+        
     }
     
     func centerMapOnLocation(location: CLLocation){
@@ -57,6 +63,33 @@ class SearchViewController: UIViewController {
         
         return nil
     }
+    
+    func loadInitialData() {
+        
+        let fileName = NSBundle.mainBundle().pathForResource("SMUPlaces", ofType: "json");
+        var readError : NSError?
+        var data: NSData = NSData(contentsOfFile: fileName!, options: NSDataReadingOptions(0),
+            error: &readError)!
+        
+        
+        var error: NSError?
+        let jsonObject: AnyObject! = NSJSONSerialization.JSONObjectWithData(data,
+            options: NSJSONReadingOptions(0), error: &error)
+        
+        
+        if let jsonObject = jsonObject as? [String: AnyObject] where error == nil,
+            
+            let jsonData = JSONValue.fromObject(jsonObject)?["data"]?.array {
+                for artworkJSON in jsonData {
+                    if let artworkJSON = artworkJSON.array,
+                        // 5
+                        artwork = Place.fromJSON(artworkJSON) {
+                            places.append(artwork)
+                    }
+                }
+        }
+    }
+
 
 
 }
