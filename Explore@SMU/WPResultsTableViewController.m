@@ -78,6 +78,8 @@
     WPWatsonQuestionResponse* res = watson.responses[watson.currentQuestion];
     cell.textLabel.text = res.answers[indexPath.row][KEY_TEXT];
     
+    NSLog(res.evidence[0][KEY_TEXT]);
+    
     return cell;
 }
 

@@ -69,6 +69,11 @@ class InvestigateViewController: UIViewController, NSURLSessionTaskDelegate, UII
             text_progress.text = "Oh, no! No camera found!"
         }
         
+        NSNotificationCenter.defaultCenter().addObserver(self,
+            selector:"updateLandmarkInfo:",
+            name:"QuestionGotResponseNotification",
+            object: nil/*,
+            queue: NSOperationQueue.mainQueue()*/)
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -112,10 +117,17 @@ class InvestigateViewController: UIViewController, NSURLSessionTaskDelegate, UII
             image_predict.image = UIImage(named: "placeholder_icon")
         }
 //        button_upload.backgroundColor = UIColor.clearColor()
+//        self.askWatson(self.landmarkObject[1] as! NSString)
         
     }
     
-    
+    func updateLandmarkInfo(notification: NSNotification) {
+        let response = notification.userInfo!["response"] as! String
+        
+        dispatch_async(dispatch_get_main_queue()){
+            self.text_info.text = response
+        }
+    }
     
     
     
@@ -127,10 +139,7 @@ class InvestigateViewController: UIViewController, NSURLSessionTaskDelegate, UII
         // API call
         // populate info
         
-        //var sw: SharedWatson = SharedWatson()
-        dispatch_async(dispatch_get_main_queue()) {
-            self.text_info.text = SharedWatson.askWatsonQuestion(question as String)
-        }
+        SharedWatson.askWatsonQuestion(question as String)
 
     }
     

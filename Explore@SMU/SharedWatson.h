@@ -10,6 +10,7 @@
 
 @interface SharedWatson : NSObject
 
-+(NSString*) askWatsonQuestion:(NSString*)question;
++(void) askWatsonQuestion:(NSString*)question;
++(void) responseFound;
 
 @end

@@ -12,18 +12,29 @@
 
 @implementation SharedWatson
 
-+(NSString*) askWatsonQuestion:(NSString*)question {
-    WPWatson* watson = [WPWatson sharedManager];
++(void) askWatsonQuestion:(NSString*)question {
     
-    [watson askQuestion:question completionHandler:^(NSError *connectionError) {
+    [[WPWatson sharedManager] askQuestion:question completionHandler:^(NSError* connectionError) {
         dispatch_async(dispatch_get_main_queue(), ^{
-            
+            [self responseFound];
+
         });
     }];
+}
+
++(void) responseFound {
     
+    WPWatson* watson = [WPWatson sharedManager];
     WPWatsonQuestionResponse* response = watson.responses[watson.currentQuestion];
     
-    return response.answers[0][KEY_TEXT];
+    NSString* responseStr = response.evidence[0][KEY_TEXT];
+    
+    NSDictionary* result = @{@"response": responseStr};
+    
+    [[NSNotificationCenter defaultCenter]
+     postNotificationName:@"QuestionGotResponseNotification"
+     object:nil
+     userInfo:result];
 }
 
 @end
