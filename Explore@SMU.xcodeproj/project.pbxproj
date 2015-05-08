@@ -149,7 +149,6 @@
 				ADDD51B41AF818C700D46E54 /* WPWatsonQuestionResponse.h */,
 				ADDD51B51AF818C700D46E54 /* WPWatsonQuestionResponse.m */,
 				ADDD51A71AF818C600D46E54 /* Explore@SMU-Bridging-Header.h */,
-				AD5E7CC71AFC946D001A2D92 /* SearchTableViewController.swift */,
 			);
 			name = Watson;
 			sourceTree = "<group>";
@@ -185,6 +184,7 @@
 				ADDD519C1AF7F35600D46E54 /* MasterViewController.swift */,
 				EF941FA91AEFF1DF001C1332 /* ExploreViewController.swift */,
 				EF941FAB1AEFF1DF001C1332 /* SearchViewController.swift */,
+				AD5E7CC71AFC946D001A2D92 /* SearchTableViewController.swift */,
 				EF941FCB1AEFF2BD001C1332 /* AskViewController.swift */,
 				AD388F171AF8A8EC00B78492 /* Scavenger Hunt */,
 				EF941FA51AEFF1DF001C1332 /* Supporting Files */,

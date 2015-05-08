@@ -11,7 +11,7 @@ import MapKit
 
 class ExploreViewController: UIViewController, MKMapViewDelegate {
 
-    let regionRadius: CLLocationDistance = 1000
+    let regionRadius: CLLocationDistance = 50
     var places = [Place]()
     var annotate = [Place]()
     let minDistance = CLLocationDistance(100)
@@ -27,18 +27,17 @@ class ExploreViewController: UIViewController, MKMapViewDelegate {
         //self.mapView.showsUserLocation = true
         
         let initialLocation = CLLocation(latitude: 32.8441, longitude: -96.7849)
+        self.centerMapOnLocation(initialLocation)
         
         self.mapView.showsUserLocation = true
         self.mapView.setUserTrackingMode(MKUserTrackingMode.FollowWithHeading, animated: true)
         
-        self.centerMapOnLocation(initialLocation)
+        self.mapView.scrollEnabled = false
         
-        //let meadowsMuseum = Place(title: "Meadows Museum", area: "By the boulevard", coordinate: CLLocationCoordinate2D(latitude: 32.8384, longitude: -96.7843))
-        
-        //mapView.addAnnotation(meadowsMuseum)
+        self.mapView.rotateEnabled = false
         
         loadInitialData()
-        //mapView.addAnnotations(places)
+        
         mapView.delegate = self
     }
     
@@ -69,8 +68,9 @@ class ExploreViewController: UIViewController, MKMapViewDelegate {
     
     func mapView(mapView: MKMapView!, didUpdateUserLocation
         userLocation: MKUserLocation!) {
-            mapView.centerCoordinate = userLocation.location.coordinate
+            //mapView.centerCoordinate = userLocation.location.coordinate
             self.mapView.setUserTrackingMode(MKUserTrackingMode.FollowWithHeading, animated: true)
+            
             let userLoc = CLLocation(latitude: userLocation.coordinate.latitude, longitude: userLocation.coordinate.longitude)
             
             for annotated in annotate{
