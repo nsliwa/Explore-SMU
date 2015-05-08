@@ -127,9 +127,10 @@ class InvestigateViewController: UIViewController, NSURLSessionTaskDelegate, UII
         // API call
         // populate info
         
-        var sw: SharedWatson = SharedWatson()
-        
-        text_info.text = sw.askWatsonQuestion(question as String) as String
+        //var sw: SharedWatson = SharedWatson()
+        dispatch_async(dispatch_get_main_queue()) {
+            self.text_info.text = SharedWatson.askWatsonQuestion(question as String)
+        }
 
     }
     

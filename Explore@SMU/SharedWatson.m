@@ -12,7 +12,7 @@
 
 @implementation SharedWatson
 
--(NSString*) askWatsonQuestion:(NSString*)question {
++(NSString*) askWatsonQuestion:(NSString*)question {
     WPWatson* watson = [WPWatson sharedManager];
     
     [watson askQuestion:question completionHandler:^(NSError *connectionError) {
