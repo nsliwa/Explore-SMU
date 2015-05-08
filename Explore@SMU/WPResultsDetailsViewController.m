@@ -1,3 +1,4 @@
+
 // WPResultsDetailsViewController.m
 //
 // Copyright (c) 2014 Carlos Andreu
@@ -40,28 +41,39 @@
 {
     [super viewDidLoad];
     
+    [[NSNotificationCenter defaultCenter]
+     addObserver:self
+     selector:@selector(updateEvidence:)
+     name:@"EvidenceFoundNotification"
+     object:nil];
+    
     //Get the current response
-    WPWatson* watson = [WPWatson sharedManager];
-    WPWatsonQuestionResponse* response = watson.responses[watson.currentQuestion];
+    /*WPWatson* watson = [WPWatson sharedManager];
+    WPWatsonQuestionResponse* response = watson.responses[watson.currentQuestion];*/
     
     //Get the current answer
-    NSDictionary* currentAnswer = response.answers[self.row];
+    /*NSDictionary* currentAnswer = response.answers[0];
     
     //Set labels for text and confidence based on the current answer
     NSNumber *conflevel = currentAnswer[KEY_CONFIDENCE];
     self.confidenceLabel.text = [NSString stringWithFormat:@"%.6f", [conflevel floatValue]];
-    self.answerTextBox.text = currentAnswer[KEY_TEXT];
+    self.answerTextBox.text = currentAnswer[KEY_TEXT];*/
+
     
-    //Get a random number and use it to populate the UI with a random evidence
-    int randNum = [WPUtils randomNumberWithMax:(int)response.evidence.count-1 andMin:0];
-    randNum = self.row; // why should this be random? No thanks
-    self.evidenceTextBox.text = response.evidence[randNum][KEY_TEXT];
+    //NSLog(@"%@", response.evidence[0][KEY_TEXT]);
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)updateEvidence:(NSNotification*) notification{
+    WPWatson* watson = [WPWatson sharedManager];
+    WPWatsonQuestionResponse* response = watson.responses[watson.currentQuestion];
+    
+    self.evidenceTextBox.text = response.evidence[0][KEY_TEXT];
 }
 
 @end

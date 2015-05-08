@@ -22,7 +22,7 @@
 
 #import "WPMainViewController.h"
 #import "WPWatson.h"
-#import "WPResultsTableViewController.h"
+#import "WPResultsDetailsViewController.h"
 #import "WPUtils.h"
 #import "WPConstants.h"
 
@@ -82,16 +82,19 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     //Check for the right segue
-    if ([segue.identifier isEqualToString:SEGUE_SHOW_ANSWER_LIST]) {
+    
+    NSLog(segue.identifier);
+    NSLog(SEGUE_SHOW_RESULTS_DETAILS);
+//    if ([segue.identifier isEqualToString:SEGUE_SHOW_RESULTS_DETAILS]) {
 
         //Build a loading animation
         UIActivityIndicatorView *spinner = [WPUtils buildBusyIndicator];
         
         //Get the table view controller that will have the answers
-        WPResultsTableViewController *tableViewController = segue.destinationViewController;
+        WPResultsDetailsViewController *detailViewController = segue.destinationViewController;
         
         //Add the loading animation and start it
-        [tableViewController.view addSubview:spinner];
+        [detailViewController.view addSubview:spinner];
         [spinner startAnimating];
         
         //Get the question from the UI
@@ -103,14 +106,30 @@
             //Reload the table to show the data from the response, must be done on the main thread
             dispatch_async(dispatch_get_main_queue(), ^{
                 
-                [tableViewController.tableView reloadData];
+                //[uiViewController.ta reloadData];
+                [self responseFound];
                 
                 //Stop the loading animation
                 [spinner stopAnimating];
             });
         }];
 
-    }
+//    }
+}
+
+-(void) responseFound {
+    
+    WPWatson* watson = [WPWatson sharedManager];
+    WPWatsonQuestionResponse* response = watson.responses[watson.currentQuestion];
+    
+    NSString* responseStr = response.evidence[0][KEY_TEXT];
+    
+    NSDictionary* result = @{@"response": responseStr};
+    
+    [[NSNotificationCenter defaultCenter]
+     postNotificationName:@"EvidenceFoundNotification"
+     object:nil
+     userInfo:result];
 }
 
 @end
