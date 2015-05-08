@@ -8,5 +8,6 @@
 //#import "OBShapedButton.h"
 //#import"UIImage+ColorAtPixel.h"
 #import "WPMainViewController.h"
+#import "SharedWatson.h"
 
 #endif

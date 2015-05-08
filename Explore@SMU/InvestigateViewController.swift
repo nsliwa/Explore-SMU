@@ -126,7 +126,11 @@ class InvestigateViewController: UIViewController, NSURLSessionTaskDelegate, UII
         // get question for watson based on location
         // API call
         // populate info
-        NSLog("Asked a question")
+        
+        var sw: SharedWatson = SharedWatson()
+        
+        text_info.text = sw.askWatsonQuestion(question as String) as String
+
     }
     
     

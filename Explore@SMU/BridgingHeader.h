@@ -10,7 +10,9 @@
 #define BEN_A6_BridgingHeader_h
 
 #import "OBShapedButton.h"
-#import"UIImage+ColorAtPixel.h"
+#import "UIImage+ColorAtPixel.h"
 #import "WPMainViewController.h"
+#import "WPWatson.h"
+#import "SharedWatson.h"
 
 #endif

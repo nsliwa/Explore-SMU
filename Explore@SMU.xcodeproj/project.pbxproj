@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49950B891AFC635A004CB6DB /* SharedWatson.m in Sources */ = {isa = PBXBuildFile; fileRef = 49950B881AFC635A004CB6DB /* SharedWatson.m */; };
 		AD388F121AF8911100B78492 /* ScavengerHunt.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD388F111AF8911100B78492 /* ScavengerHunt.plist */; };
 		AD388F141AF89B7800B78492 /* LocationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD388F131AF89B7800B78492 /* LocationsTableViewController.swift */; };
 		AD388F161AF8A8DD00B78492 /* LandmarksCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD388F151AF8A8DD00B78492 /* LandmarksCollectionViewController.swift */; };
@@ -49,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		49950B871AFC635A004CB6DB /* SharedWatson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedWatson.h; sourceTree = "<group>"; };
+		49950B881AFC635A004CB6DB /* SharedWatson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedWatson.m; sourceTree = "<group>"; };
 		AD388F111AF8911100B78492 /* ScavengerHunt.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ScavengerHunt.plist; sourceTree = "<group>"; };
 		AD388F131AF89B7800B78492 /* LocationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsTableViewController.swift; sourceTree = "<group>"; };
 		AD388F151AF8A8DD00B78492 /* LandmarksCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandmarksCollectionViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +130,8 @@
 		ADDD51A61AF818A300D46E54 /* Watson */ = {
 			isa = PBXGroup;
 			children = (
+				49950B871AFC635A004CB6DB /* SharedWatson.h */,
+				49950B881AFC635A004CB6DB /* SharedWatson.m */,
 				ADDD51A81AF818C700D46E54 /* WPConstants.h */,
 				ADDD51A91AF818C700D46E54 /* WPConstants.m */,
 				ADDD51AA1AF818C700D46E54 /* WPMainViewController.h */,
@@ -346,6 +351,7 @@
 				ADDD51B81AF818C700D46E54 /* WPResultsDetailsViewController.m in Sources */,
 				EF941FAA1AEFF1DF001C1332 /* ExploreViewController.swift in Sources */,
 				ADDD51B61AF818C700D46E54 /* WPConstants.m in Sources */,
+				49950B891AFC635A004CB6DB /* SharedWatson.m in Sources */,
 				EF941FCC1AEFF2BD001C1332 /* AskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
