@@ -13,6 +13,7 @@
 		AD388F161AF8A8DD00B78492 /* LandmarksCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD388F151AF8A8DD00B78492 /* LandmarksCollectionViewController.swift */; };
 		AD388F191AF8C0B700B78492 /* LandmarkCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD388F181AF8C0B700B78492 /* LandmarkCollectionViewCell.swift */; };
 		AD388F1B1AF9619900B78492 /* AppInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD388F1A1AF9619900B78492 /* AppInfo.plist */; };
+		AD5E7CC81AFC946D001A2D92 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5E7CC71AFC946D001A2D92 /* SearchTableViewController.swift */; };
 		ADDD519D1AF7F35600D46E54 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDD519C1AF7F35600D46E54 /* MasterViewController.swift */; };
 		ADDD51A31AF8186300D46E54 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADDD51A01AF8186300D46E54 /* config.plist */; };
 		ADDD51A41AF8186300D46E54 /* fake.json in Resources */ = {isa = PBXBuildFile; fileRef = ADDD51A11AF8186300D46E54 /* fake.json */; };
@@ -57,6 +58,7 @@
 		AD388F151AF8A8DD00B78492 /* LandmarksCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandmarksCollectionViewController.swift; sourceTree = "<group>"; };
 		AD388F181AF8C0B700B78492 /* LandmarkCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandmarkCollectionViewCell.swift; sourceTree = "<group>"; };
 		AD388F1A1AF9619900B78492 /* AppInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AppInfo.plist; sourceTree = "<group>"; };
+		AD5E7CC71AFC946D001A2D92 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		ADDD519C1AF7F35600D46E54 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		ADDD51A01AF8186300D46E54 /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
 		ADDD51A11AF8186300D46E54 /* fake.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fake.json; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				ADDD51B41AF818C700D46E54 /* WPWatsonQuestionResponse.h */,
 				ADDD51B51AF818C700D46E54 /* WPWatsonQuestionResponse.m */,
 				ADDD51A71AF818C600D46E54 /* Explore@SMU-Bridging-Header.h */,
+				AD5E7CC71AFC946D001A2D92 /* SearchTableViewController.swift */,
 			);
 			name = Watson;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				ADDD51BA1AF818C700D46E54 /* WPUtils.m in Sources */,
 				EFAEC3461AFC0FAE0048D6E6 /* JSON.swift in Sources */,
 				EF941FA81AEFF1DF001C1332 /* AppDelegate.swift in Sources */,
+				AD5E7CC81AFC946D001A2D92 /* SearchTableViewController.swift in Sources */,
 				ADDD519D1AF7F35600D46E54 /* MasterViewController.swift in Sources */,
 				ADDD51BC1AF818C700D46E54 /* WPWatsonQuestionResponse.m in Sources */,
 				AD388F141AF89B7800B78492 /* LocationsTableViewController.swift in Sources */,
