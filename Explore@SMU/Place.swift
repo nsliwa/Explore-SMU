@@ -33,9 +33,9 @@ class Place: NSObject, MKAnnotation {
         	
         let area = json[2].string
         
-        let latitude = (json[3].string! as NSString).doubleValue
-        let longitude = (json[4].string! as NSString).doubleValue
-        let coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        let latitude = json[3].double
+        let longitude = json[4].double
+        let coordinate = CLLocationCoordinate2D(latitude: latitude!, longitude: longitude!)
         
         return Place(title: title, area: area!, coordinate: coordinate)
     }
