@@ -30,7 +30,7 @@ class Place: NSObject, MKAnnotation {
         } else {
             title = ""
         }
-        
+        	
         let area = json[2].string
         
         let latitude = (json[3].string! as NSString).doubleValue

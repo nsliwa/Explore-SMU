@@ -1,14 +1,575 @@
 {  
-  "data" : [ 
-  [1, "Hoyt G. Kennemer Memorial Fountain", "By Dallas Hall", "32.844224", "-96.784966"]
-, [2, "Cooper Cenetennial Fountain", "By Blanton", "32.842074", "-96.782885"]
-, [3, "Wave", "By Meadows Museum", "32.838076", "-96.784950"]
-, [4, "The Jake and Nancy Hamon Fountain", "By Meadows Museum", "32.838431", "-96.784900"]
-, [5, "Val and Frank Late Fountain", "By Airline", "32.845631", "-96.782605"]
-, [6, "Ann Lacy Crain Fountain", "By Blanton", "32.842033", "-96.782021"]
-, [7, "Kirby Hall Fountain", "By Kirby Hall", "32.839341", "-96.786182"]
-, [8, "Meadows Fount", "By the Owen Arts Center", "32.840842", "-96.785395"]
-, [9, "Greer Garson Theatre Fountain", "By the Owen Arts Center", "32.841211", "-96.786642"]
-, [10, "The Geroge W. Bush Presidential Library and Museum Fountain", "By the Geroge W. Bush Presidential Library and Museum", "32.841300", "-96.778271"]
- ]
+    "data" : [
+              [
+               1,
+               "Airline Parking Garage",
+               "",
+               32.846102,
+               -96.782756
+               ],
+              [
+               2,
+               "Ann Lacy Crain Fountain",
+               "By Blanton",
+               32.842033,
+               -96.782021
+               ],
+              [
+               3,
+               "Annete Caldwell Simmons Hall",
+               "Simmons, Education & Human Development",
+               32.844875,
+               -96.78215
+               ],
+              [
+               4,
+               "Armstrong Commons",
+               "Residential Commons",
+               32.838725,
+               -96.781499
+               ],
+              [
+               5,
+               "Arnold Dining Commons",
+               "Cafeteria",
+               32.838964,
+               -96.780375
+               ],
+              [
+               6,
+               "Barr Pool",
+               "",
+               32.840411,
+               -96.783881
+               ],
+              [
+               7,
+               "Binkley Parking Garage",
+               "",
+               32.840979,
+               -96.782357
+               ],
+              [
+               8,
+               "Blanton",
+               "Student Services",
+               32.84204,
+               -96.782273
+               ],
+              [
+               9,
+               "Boaz Hall",
+               "Residential Commons",
+               32.841366,
+               -96.784117
+               ],
+              [
+               10,
+               "Bridwell Library",
+               "",
+               32.84,
+               -96.785796
+               ],
+              [
+               11,
+               "Carr-Collins Hall",
+               "Dedman, Law",
+               32.845951,
+               -96.78555
+               ],
+              [
+               12,
+               "Caruth Hall",
+               "Lyle, Engineering",
+               32.842875,
+               -96.78312
+               ],
+              [
+               13,
+               "Clements Hall",
+               "Deman, Humanities and Sciences",
+               32.843475,
+               -96.784181
+               ],
+              [
+               14,
+               "Cockrell-McIntosh Commons",
+               "Residential Commons",
+               32.839338,
+               -96.784445
+               ],
+              [
+               15,
+               "Collins Executive Education Center",
+               "Cox, Business",
+               32.841567,
+               -96.782959
+               ],
+              [
+               16,
+               "Cooper Cenetennial Fountain",
+               "By Blanton",
+               32.842074,
+               -96.782885
+               ],
+              [
+               17,
+               "Crow Building",
+               "Cox, Business",
+               32.842115,
+               -96.784171
+               ],
+              [
+               18,
+               "Crum Basketball Center",
+               "",
+               32.840804,
+               -96.779789
+               ],
+              [
+               19,
+               "Crum Commons",
+               "Residential Commons",
+               32.838073,
+               -96.781154
+               ],
+              [
+               20,
+               "Dallas Hall",
+               "Dedman, Humanities and Sciences",
+               32.84513,
+               -96.784901
+               ],
+              [
+               21,
+               "Daniel House",
+               "Residential Commons",
+               32.846856,
+               -96.782194
+               ],
+              [
+               22,
+               "Dawson Service Center",
+               "Administration",
+               32.843292,
+               -96.78115
+               ],
+              [
+               23,
+               "Dedman Center for Lifetime Sports",
+               "Gym",
+               32.838707,
+               -96.785787
+               ],
+              [
+               24,
+               "Dedman Life Sciences Building",
+               "Dedman, Humanities and Sciences",
+               32.84564,
+               -96.783334
+               ],
+              [
+               25,
+               "Embrey",
+               "Lyle, Engineering",
+               32.842731,
+               -96.782296
+               ],
+              [
+               26,
+               "Fincher Building",
+               "Cox, Business",
+               32.842257,
+               -96.783839
+               ],
+              [
+               27,
+               "Florence Hall",
+               "Dedman, Law",
+               32.845718,
+               -96.78611
+               ],
+              [
+               28,
+               "Fondren Library Center",
+               "",
+               32.844441,
+               -96.783592
+               ],
+              [
+               29,
+               "Fondren Science Building",
+               "Dedman, Humanities and Sciences",
+               32.846091,
+               -96.783748
+               ],
+              [
+               30,
+               "Fraternity Row",
+               "",
+               32.842261,
+               -96.780611
+               ],
+              [
+               31,
+               "Gerald J Ford Stadium",
+               "",
+               32.837859,
+               -96.783804
+               ],
+              [
+               32,
+               "Greer Garson Theatre Fountain",
+               "By the Owen Arts Center",
+               32.841211,
+               -96.786642
+               ],
+              [
+               33,
+               "Harold Clark Simmons Hall",
+               "Simmons, Education & Human Development",
+               32.844586,
+               -96.78259
+               ],
+              [
+               34,
+               "Hawk Halll",
+               "Residential Commons",
+               32.838991,
+               -96.786563
+               ],
+              [
+               35,
+               "Heroy Science Hall",
+               "",
+               32.845928,
+               -96.784327
+               ],
+              [
+               36,
+               "Highland Park Methodist Church",
+               "",
+               32.837714,
+               -96.786459
+               ],
+              [
+               37,
+               "Hoyt G. Kennemer Memorial Fountain",
+               "By Dallas Hall",
+               32.844224,
+               -96.784966
+               ],
+              [
+               38,
+               "Hughes-Trigg Studen Center",
+               "",
+               32.843337,
+               -96.78332
+               ],
+              [
+               39,
+               "Hyer Hall",
+               "Dedman, Humanities and Sciences",
+               32.84564,
+               -96.783334
+               ],
+              [
+               40,
+               "Intramural Field",
+               "",
+               32.841868,
+               -96.780867
+               ],
+              [
+               41,
+               "Junkins",
+               "Lyle, Engineering",
+               32.842513,
+               -96.782165
+               ],
+              [
+               42,
+               "Kathy Crow Commons",
+               "Residential Commons",
+               32.838457,
+               -96.780276
+               ],
+              [
+               43,
+               "Kirby Hall",
+               "Perkins, Theology",
+               32.839363,
+               -96.785762
+               ],
+              [
+               44,
+               "Kirby Hall Fountain",
+               "By Kirby Hall",
+               32.839341,
+               -96.786182
+               ],
+              [
+               45,
+               "Law Parking Garage",
+               "Dedman, Law",
+               32.84679,
+               -96.785967
+               ],
+              [
+               46,
+               "Loyd Commons",
+               "Residential Commons",
+               32.838734,
+               -96.779761
+               ],
+              [
+               47,
+               "Mac's Place",
+               "Cafeteria",
+               32.839712,
+               -96.783613
+               ],
+              [
+               48,
+               "Maguire Building",
+               "Cox, Business",
+               32.842395,
+               -96.784136
+               ],
+              [
+               49,
+               "Martin Hall",
+               "Residential Commons",
+               32.839387,
+               -96.786301
+               ],
+              [
+               50,
+               "Mary Hay Hall",
+               "Residential Commons",
+               32.841808,
+               -96.78586
+               ],
+              [
+               51,
+               "McElvaney Commons",
+               "Residential Commons",
+               32.839725,
+               -96.78408
+               ],
+              [
+               52,
+               "McFarlin Auditorium",
+               "",
+               32.844264,
+               -96.785776
+               ],
+              [
+               53,
+               "Meadows Fount",
+               "By the Owen Arts Center",
+               32.840842,
+               -96.785395
+               ],
+              [
+               54,
+               "MGC House",
+               "Residential Commons",
+               32.846815,
+               -96.782591
+               ],
+              [
+               55,
+               "Moody Coliseum",
+               "",
+               32.840405,
+               -96.781189
+               ],
+              [
+               56,
+               "Moore Hall",
+               "Residential Commons",
+               32.838315,
+               -96.786612
+               ],
+              [
+               57,
+               "Morrison-Bell Track",
+               "",
+               32.839085,
+               -96.782908
+               ],
+              [
+               58,
+               "Morrison-McGinnis Commons",
+               "Residential Commons",
+               32.840127,
+               -96.784407
+               ],
+              [
+               59,
+               "Mustang Parking Center",
+               "",
+               32.839333,
+               -96.779589
+               ],
+              [
+               60,
+               "Owens Arts Center",
+               "Meadows, Art",
+               32.841204,
+               -96.785478
+               ],
+              [
+               61,
+               "Perking Administration Building",
+               "",
+               32.844921,
+               -96.785801
+               ],
+              [
+               62,
+               "Perkins Chapel",
+               "",
+               32.83976,
+               -96.785885
+               ],
+              [
+               63,
+               "Perkins Hall",
+               "Residential Commons",
+               32.84014,
+               -96.786263
+               ],
+              [
+               64,
+               "Peyton Hall",
+               "Residential Commons",
+               32.84181,
+               -96.786536
+               ],
+              [
+               65,
+               "Prothro Hall",
+               "Perkins, Theology",
+               32.838707,
+               -96.785787
+               ],
+              [
+               66,
+               "RLSH Office",
+               "",
+               32.841393,
+               -96.784611
+               ],
+              [
+               67,
+               "Selecman Hall",
+               "Perkins, Theology",
+               32.839047,
+               -96.785755
+               ],
+              [
+               68,
+               "Service House",
+               "Residential Commons",
+               32.843103,
+               -96.7814
+               ],
+              [
+               69,
+               "Shuttles Hall",
+               "Residential Commons",
+               32.842312,
+               -96.786671
+               ],
+              [
+               70,
+               "Smith Hall",
+               "Residential Commons",
+               32.840438,
+               -96.786252
+               ],
+              [
+               71,
+               "Sorority Park",
+               "",
+               32.846182,
+               -96.780246
+               ],
+              [
+               72,
+               "Storey Hall",
+               "Dedman, Law",
+               32.843473,
+               -96.785889
+               ],
+              [
+               73,
+               "The Geroge W. Bush Presidential Library and Museum Fountain",
+               "By the Geroge W. Bush Presidential Library and Museum",
+               32.8413,
+               -96.778271
+               ],
+              [
+               74,
+               "The Jake and Nancy Hamon Fountain",
+               "By Meadows Museum",
+               32.838431,
+               -96.7849
+               ],
+              [
+               75,
+               "Umphree Lee Center",
+               "Meadows, Communications and Journalism",
+               32.843473,
+               -96.785889
+               ],
+              [
+               76,
+               "Umphree Lee Dining Hall",
+               "Cafeteria",
+               32.843416,
+               -96.78598
+               ],
+              [
+               77,
+               "Underwood Law Library",
+               "Dedman, Law",
+               32.845945,
+               -96.786458
+               ],
+              [
+               78,
+               "Val and Frank Late Fountain",
+               "By Airline",
+               32.845631,
+               -96.782605
+               ],
+              [
+               79,
+               "Virginia-Snider Hall",
+               "Residential Commons",
+               32.842709,
+               -96.785839
+               ],
+              [
+               80,
+               "Ware Commons",
+               "Residential Commons",
+               32.838042,
+               -96.780124
+               ],
+              [
+               81,
+               "Wave",
+               "By Meadows Museum",
+               32.838076,
+               -96.78495
+               ],
+              [
+               ""
+               ]
+              ]
+
 }
